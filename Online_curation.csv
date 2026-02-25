@@ -1,0 +1,576 @@
+Competency domain,Focus Areas,Resource title,URL,Platform / host,Resource type,Stated learning outcomes,Stated prerequisites,Length (mins),Indicated level,Intended audience,Format type (passive / interactive),Publication date,Last updated,Captions / transcripts,Mobile accessible,Skill area,Student journey stage,Comments
+Foundational technical knowledge and digital literacy,Software Development,Software Engineering,,CMU Computer Science Academy,Online course,,,,,,,,,,,,,
+,,Examination of Software Architecture: Principles and Practices,https://www.sei.cmu.edu/training/software-architecture-principles-practices-elearning/,Software Engineering Institute (SEI),Online course,"Learners will understand how architectural decisions enable flexibility, interoperability, scalability, and cost efficiency while supporting organizational strategy and market positioning. By the end of the course, participants will be able to leverage software architecture to improve system maintainability, team coordination, and long-term business value.","Experience in the development of software-reliant systems
+and familiarity with modern software engineering concepts",16 hours,Intermediate,"professionals who design, develop, or manage the construction of software-reliant systems.",Interactive,N/A,N/A,N/A,Yes,"Demonstrate the ability to apply programming skills and software engineering knowledge, including data structures and algorithms, to practical problems.",Ongoing study,This course has price tag of $500  which could be a bit expensive for a student.
+,,Software Architecture: Principles and Practices,https://www.sei.cmu.edu/training/software-architecture-principles-practices-elearning/,Software Engineering Institute (SEI),Online course,"Learners will understand how architectural decisions enable flexibility, interoperability, scalability, and cost efficiency while supporting organizational strategy and market positioning. By the end of the course, participants will be able to leverage software architecture to improve system maintainability, team coordination, and long-term business value.","Experience in software-reliant systems; familiarity with modern 
+software engineering; ownership of the Software 
+Architecture in Practice, 4th Edition textbook.",16 hours,Intermediate,"Professionals who design,develop, or manage the 
+construction of software-reliant systems.",Interactive,N/A,N/A,N/A,No,"Demonstrate the ability to apply programming skills and software engineering knowledge, including data structures and algorithms, to practical problems.",Ongoing study,This course has price tag of $500  which could be a bit expensive for a student.
+,,"Understanding Software Architecture, Quality, and Security Through Code Analysis",https://www.sei.cmu.edu/training/software-architecture-design-analysis/,Software Engineering Institute (SEI),Online (Live sessions) course,"This course provides in-depth coverage of the principles and methods required to design and analyze effective software architectures. Learners will understand key architectural design considerations, quality attribute elicitation using the Quality Attribute Workshop (QAW), and architecture design through the Attribute-Driven Design (ADD) method. By the end of the course, participants will be able to evaluate architectures and integrate these methods within the software development life cycle.",Completing the Software Architecture: Principles and Practices course,5 hours a day for 3 days ,,"Practicing software architects
+
+Designers and developers of software-reliant systems",Interactive,N/A,N/A,N/A,Yes,"Demonstrate the ability to apply programming skills and software engineering knowledge, including data structures and algorithms, to practical problems.",Transition to industry,"Scheduled to start on May 11-14 this year from 12-5pm EST
+
+Costs $1200"
+,,Documenting Software Architectures,https://www.sei.cmu.edu/training/documenting-software-architectures-elearning/,Software Engineering Institute (SEI),Online course,"This course equips software architects with the skills to create clear, comprehensive, and stakeholder-focused software architecture documentation. Learners will understand how to apply view-based documentation approaches, select appropriate architectural views, and capture the essential information needed to communicate structure, behavior, and interfaces. By the end of the course, participants will be able to use formal and informal notations, including UML, to produce architecture documentation that is useful, consistent, and actionable across stakeholder groups.","Experience in designing and developing software-intensive systems. 
+
+Understanding  the basic concepts of software architecture.
+
+Completing the Software Architecture: Principles and Practices course.",12 hours ,Intermediate,"software architects and software lead designers 
+
+Software engineers who may be expected to use architecture documentation",Interactive,N/A,N/A,N/A,No,"Demonstrate the ability to apply programming skills and software engineering knowledge, including data structures and algorithms, to practical problems.",Transition to industry,An essential course on technical documentation but might be too expensive for a student. 
+,,,,,,,,,,,,,,,,,,
+,Programming Fundamentals,Basic Programming Constructs,,CMU Computer Science Academy,Online course,,,,,,,,,,,,,
+,,Lists,,CMU Computer Science Academy,Online course,,,,,,,,,,,,,
+,,Loops And Strings,,CMU Computer Science Academy,Online course,,,,,,,,,,,,,
+,,Object Oriented Programming (OOP),,CMU Computer Science Academy,Online course,,,,,,,,,,,,,
+,,Recursion,,CMU Computer Science Academy,Online course,,,,,,,,,,,,,
+,,"Sets, Dictionaries, and Efficiency",,CMU Computer Science Academy,Online course,,,,,,,,,,,,,
+,,Introduction to Programming in Java,https://oli.cmu.edu/courses/introduction-to-programming-in-java-o-f/,OLI,Online course,"Write, compile, execute, and debug simple programs in Java
+Use primitive data types, type conversions, strings, and arrays to handle data
+Apply different constructs for iteration and conditional statements to manage a program’s control flow",,4 weeks ,Beginner,,Interactive,,Fall 2018,N/A,No,"Demonstrate the ability to apply programming skills and software engineering knowledge, including data structures and algorithms, to practical problems.",Pre-arrival,
+,,Principles of Computation with Python,https://oli.cmu.edu/courses/principles-of-computation-with-python-open-free/,OLI,Online course,"What students will learn:
+
+Programming with Python (Introduction, Conditionals, Loops)
+
+Iterative Processes
+
+Recursive Thinking
+
+Representation of Data and Instructions in Binary
+
+Cellular Automata as a Means of Generating Random Behavior
+
+Encryption Methods
+
+Limits of Computability",,10 weeks ,Beginner,,Interactive,,August 2016,,No,,,Efficient resource for getting started with python and computing principles
+,,,,,,,,,,,,,,,,,,
+,Math Foundations,Linear algebra,https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8,MIT,Lecture,"The goals for 18.06 are using matrices and also understanding them.
+Here are key computations and some of the ideas behind them:
+    Solving Ax = b for square systems by elimination (pivots, multipliers, back substitution, invertibility of A, factorization into A = LU)
+    Complete solution to Ax = b (column space containing b, rank of A, nullspace of A and special solutions to Ax = 0 from row reduced R)
+    Basis and dimension (bases for the four fundamental subspaces)
+    Least squares solutions (closest line by understanding projections)
+    Orthogonalization by Gram-Schmidt (factorization into A = QR)
+    Properties of determinants (leading to the cofactor formula and the sum over all n! permutations, applications to inv(A) and volume)
+    Eigenvalues and eigenvectors (diagonalizing A, computing powers A^k and matrix exponentials to solve difference and differential equations)
+    Symmetric matrices and positive definite matrices (real eigenvalues and orthogonal eigenvectors, tests for x’Ax > 0, applications)
+    Linear transformations and change of basis (connected to the Singular Value Decomposition - orthonormal bases that diagonalize A)
+    Linear algebra in engineering (graphs and networks, Markov matrices, Fourier matrix, Fast Fourier Transform, linear programming)
+",Multivariable Calculus,35 videos roughly 50 mins each,Not Stated,N/A,passive,"May 7, 2009",September 2019,Yes,Yes,"Demonstrate proficiency in mathematics, including calculus, linear algebra, probability and statistics, and discrete mathematics.",Pre-arrival,The last update was audio improvement. Captions are Youtube captions
+,,Linear algebra,https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab,"3Blue1Brown
+",Video series,N/A,N/A,16 videos roughly 4 - 17 min each,Not Stated,N/A,passive,"Aug 6, 2016",February 2025,Yes,Yes,"Demonstrate proficiency in mathematics, including calculus, linear algebra, probability and statistics, and discrete mathematics.",Pre-arrival,Captions are provided by Youtube.
+,,Calculus,https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr,"3Blue1Brown
+",Video series,N/A,N/A,12 videos roughly 5 - 22 min each,Not Stated,N/A,passive,"Apr 28, 2017",February 2025,Yes,Yes,"Demonstrate proficiency in mathematics, including calculus, linear algebra, probability and statistics, and discrete mathematics.",Pre-arrival,Captions are provided by Youtube.
+,,Statistical Reasoning,https://oli.cmu.edu/courses/statistical-reasoning-copy/,OLI,Online course,"By the end of this course, students will be able to:
+
+Collect, organize, and summarize data using appropriate graphical and numerical methods.
+
+Describe and interpret distributions of categorical and quantitative variables in context.
+
+Analyze relationships between variables using tables, graphs, correlation, and regression.
+
+Apply probability concepts and models to assess likelihood and uncertainty.
+
+Explain and use sampling distributions to understand variability and make statistical judgments.
+
+Perform statistical inference, including confidence intervals and hypothesis tests, and interpret results in context.
+
+Evaluate data-based claims critically, recognizing limitations, sources of bias, and the difference between association and causation.",Basic Algebra,One semester,Not Stated,Students with no prior knowledge in statistics,Interactive,N/A,December 2017,No,Yes,"Demonstrate proficiency in mathematics, including calculus, linear algebra, probability and statistics, and discrete mathematics.",Pre-arrival,
+,,Causal and Statistical Reasoning,https://oli.cmu.edu/courses/causal-and-statistical-reasoning-open-free/,OLI,Online course,"By the end of this course, students will be able to:
+
+Explain foundational concepts of causation, including deterministic and indeterministic causal relationships among variables.
+
+Distinguish between causation and association, and explain why associations do not necessarily imply causal relationships.
+
+Analyze relative and conditional frequencies to assess association and independence between variables.
+
+Use causal graphs to represent causal assumptions and reason about relationships among variables.
+
+Apply concepts of conditional independence and d-separation to evaluate causal structures and implied associations.
+
+Identify and explain challenges in causal inference, including confounding and limitations of causal discovery from observational data.
+
+Evaluate causal claims and strategies, including the role of interventions and experiments, using formal reasoning and real-world case studies.",N/A,"A semester long, at the pace of one or two modules per week.",Not Stated,"students interested in critical thinking skills for daily life, students who will take a few statistics courses in service of a related field of study, and/or students interested in the foundations of quantitative causal models",passive,N/A,N/A,No,Yes,Other (Specify in the 'Comments' column),Ongoing study,Prepares students for research and critical thinking from a statistical and causal angle.
+,,Concepts of Statistics,https://oli.cmu.edu/courses/concepts-of-statistics/,OLI,Online course,"Build statistical reasoning and conceptual understanding of basic statistical concepts, while developing the students’ procedural (and technological) competence with basic statistical processes.",N/A,One semester,Not Stated,Students who may have a weak algebra background.,Interactive,N/A,January 2018,No,Yes,"Demonstrate proficiency in mathematics, including calculus, linear algebra, probability and statistics, and discrete mathematics.",Ongoing study,20 USD per student
+,,Probability & Statistics,https://oli.cmu.edu/courses/probability-statistics-open-free/,OLI,Online course,"By the end of this course, students will have gained an appreciation for the diverse applications of statistics and its relevance to their lives and fields of study. They will learn to:
+
+develop strong learning strategies for Probability & Statistics, as well as other online courses.
+identify sampling methods used to produce data.
+create and analyze distributions of variables.
+apply the rules of probability to determine the likelihood of an event.
+use a sample to infer (or draw conclusions) about the population from which it was drawn.",Basic Algebra,One semester,Beginner,Designed for students with no prior knowledge in statistics,Interactive,N/A,December 2017,No,Yes,"Demonstrate proficiency in mathematics, including calculus, linear algebra, probability and statistics, and discrete mathematics.",Pre-arrival,
+,Data Science,Big Data Analytics,https://carmattu.com/video-library/big-data-analytics/,CARMA,,,,,,,,,,,,,,Not able to access course info
+,,Big Data Concepts,https://carmattu.com/video-library/big-data-concepts//,CARMA,Lecture,,,,,,,,,,,,,Not able to access course info
+,,Creating Datasets with Social Media,https://carmattu.com/video-library/creating-datasets-with-social-media/,CARMA,Lecture,,,,,,,,,,,,,Not able to access course info
+,,Methods for Collecting and Analyzing Data from Zoom Meetings,https://carmattu.com/video-library/methods-for-collecting-and-analyzing-data-from-zoom-meetings/,CARMA,Lecture,,,,,,,,,,,,,Not able to access course info
+,,Business Analysis,https://www.dataquest.io/path/business-analyst-with-power-bi/,DataQuest,Online course,"By the end of the course, the learner should be able to:
+Use and apply foundational math and statistics to perform data analysis
+Retrieve and manipulate data from databases using SQL
+Import, prepare, analyze, and summarize data with Excel
+Convey insights effectively to tell a story using Microsoft Power BI",N/A,3 months,Beginner,N/A,Interactive,N/A,N/A,N/A,Yes,"Use basic tools, such as Google Workspace applications, to collect, analyze, and manage digital information and solve problems.",Transition to industry,
+,,Data Analysis,,DataQuest,Online course,,,,,,,,,,,,,Not able to pinpoint particular course. There are multiple
+,,Data Engineering,https://www.dataquest.io/path/data-engineering/,DataQuest,Online course,"Programming with Python and building complex data architecture to support organizations' data strategy
+Managing distributed data processing with PySpark and orchestrating workflows with Apache Airflow
+Containerizing applications with Docker and deploying them to cloud infrastructure
+Building production-grade data pipelines that scale automatically and run reliably in cloud environment",N/A,4 months,Beginner,N/A,Interactive,N/A,N/A,N/A,Yes,"Demonstrate foundational knowledge in computer architecture, operating systems, networking, and databases.",Transition to industry,
+,,Data Science,https://www.dataquest.io/path/data-scientist/,DataQuest,Online course,"Programming with Python to perform complex statistical analysis of large datasets
+Performing SQL queries and web-scraping to explore and extract data from databases and websites
+Building insightful data visualizations to tell stories
+Automating machine learning algorithms and build predictive modeling processes",,11 months,Beginner,N/A,Interactive,N/A,N/A,N/A,Yes,"Demonstrate foundational knowledge in computer architecture, operating systems, networking, and databases.",Ongoing study,
+,,Data 101,https://guides.library.cmu.edu/data101,CMU Libraries,Online guide,N/A,N/A,N/A,Not Stated,N/A,passive,N/A,N/A,N/A,Yes,"Use basic tools, such as Google Workspace applications, to collect, analyze, and manage digital information and solve problems.",Ongoing study,
+,,Analyze Qualitative Data,https://classroom-sagepub-com.cmu.idm.oclc.org/course/view.php?id=66,SAGECampus,Online course,"This course will help you to:
+    Identify the types of data that generate themes and recognize why themes matter
+    Effectively organize your data and decide on the best approach to transcribing it
+    Evaluate the different approaches to coding and evaluate which is most suitable for analyzing your own data
+    Identify meaningful data to create appropriate codes, organizing them into categories to help with data analysis
+    Analyze your categories to find themes, evaluating these against the data
+    Use evidence from your data to support your themes",Pre-course Self Assessment,5 Hrs,Beginner,N/A,passive,Jan 2022,May 2024,Yes,Yes,"Use basic tools, such as Google Workspace applications, to collect, analyze, and manage digital information and solve problems.",Ongoing study,
+,,Chart Smarter: Mastering Data Visualization,https://classroom-sagepub-com.cmu.idm.oclc.org/course/view.php?id=106,SAGECampus,Online course,"This course will help you to:
+    Identify situations where the utilization of data visualization is appropriate   
+    Encode data using the main visual variables
+    Choose the appropriate chart that facilitates each type of comparison  
+    Practice creating graphs in Excel  
+    Format and style charts to make powerful visualizations",Pre-course Self Assessment,4 Hrs,Beginner,N/A,passive,March 2025,March 2025,N/A,Yes,"Use basic tools, such as Google Workspace applications, to collect, analyze, and manage digital information and solve problems.",Ongoing study,
+,,Cleaning Messy Data,https://classroom-sagepub-com.cmu.idm.oclc.org/course/view.php?id=72,SAGECampus,Online course,"This course will help you to:
+    Recognize when data are messy and require cleaning
+    Apply cleaning methods to messy datasets
+    Recognize how cleaning messy data contributes to good data management
+    Perform quality control of data",Pre-course Self Assessment,3 Hrs,Beginner,N/A,passive,Jan 2023,July 2025,N/A,Yes,"Use basic tools, such as Google Workspace applications, to collect, analyze, and manage digital information and solve problems.",Ongoing study,
+,,Collecting Social Media Data,https://classroom-sagepub-com.cmu.idm.oclc.org/course/view.php?id=13,SAGECampus,Online course,"This course will help you to:
+    Understand how social media data presents challenges that differ from other types of data, particularly in relation to research ethics.
+    Be empowered to effectively plan a social media data based project, including the data collection strategy, data storage and curation, and analysis.
+    Gather, clean and analyze social media data using Workbench.",Pre-course Self Assessment,6 Hrs,Beginner,N/A,passive,July 2019,May 2024,N/A,Yes,"Demonstrate foundational knowledge in computer architecture, operating systems, networking, and databases.",Ongoing study,
+,,Interactive Visualization with R,https://classroom-sagepub-com.cmu.idm.oclc.org/course/view.php?id=4,SAGECampus,Online course,"This course will help you to:
+    Understand the need for interactive visualizations and reports, and the associated workflow
+    Produce a range of visualizations relevant to the available data
+    Produce and publish a report that contains appropriate interactive visualizations to tell a story about the data",Pre-course Self Assessment,40 Hrs,Advanced,N/A,passive,Sept 2017,Sept 2024,N/A,Yes,"Use basic tools, such as Google Workspace applications, to collect, analyze, and manage digital information and solve problems.",Ongoing study,
+,,Introduction to Data Visualization,https://classroom-sagepub-com.cmu.idm.oclc.org/course/view.php?id=3,SAGECampus,Online course,"This course will help you to:
+    Recognize the definition of data visualization as well as the capabilities and activities involved in the design process
+    Increase the sophistication of your critical thinking by following the 3 principles of good design
+    Formulate a brief to establish clarity about the context and vision of your data visualization task
+    Gather, familiarize and prepare your understanding of the data with which you are working
+    Use editorial thinking to shape what you are going to say with your data visualization
+    Broaden your awareness and the potential application of the variety of data representation techniques
+    Explore the value and potential application of interactivity and annotation in your data visualization design
+    Identify the application of colour and composition decisions in your data visualization design",Pre-course Self Assessment,12 Hrs,Beginner,N/A,passive,March 2018,May 2024,N/A,Yes,"Use basic tools, such as Google Workspace applications, to collect, analyze, and manage digital information and solve problems.",Ongoing study,
+,,Introduction to Text Mining,https://classroom-sagepub-com.cmu.idm.oclc.org/course/view.php?id=10,SAGECampus,Online course,"This course will help you to:
+    Define text mining and text analysis  
+    Select and sample appropriate data  
+    Identify the various types of lexical resources, their uses and availability   
+    Differentiate between narrative, thematic, and metaphor analysis approaches
+    Differentiate between text classification, opinion mining, information extraction, and topic modeling 
+    Explore available data sets and software tools for key text mining techniques ",Pre-course Self Assessment,10 Hrs,Beginner,N/A,passive,Dec 2018,July 2025,N/A,Yes,"Use basic tools, such as Google Workspace applications, to collect, analyze, and manage digital information and solve problems.",Ongoing study,
+,,Practical Data Management with R,https://classroom-sagepub-com.cmu.idm.oclc.org/course/view.php?id=8,SAGECampus,Online course,"By the end of this course you will have gained:
+    An understanding of Basic R commands and data structures for manipulating data
+    The ability to read data from multiple formats in and out of R
+    Proficiency using loops, conditional statements, and functions to automate common data management tasks
+    Familiarity with R’s package system for extending its functionality
+    The skills to clean and manage multiple complex datasets
+    The ability to clean and manipulate textual data
+    An understanding of basic web scraping techniques, for both standard web pages and the Twitter API
+    An overview of the techniques and hardware necessary to manage large datasets efficiently",Pre-course Self Assessment,30 Hrs,Intermediate,N/A,passive,Sept 2017,June 2024,N/A,Yes,"Use basic tools, such as Google Workspace applications, to collect, analyze, and manage digital information and solve problems.",Ongoing study,
+,AI & ML,Introduction to Artificial Intelligence,https://classroom-sagepub-com.cmu.idm.oclc.org/course/view.php?id=67,SAGECampus,Online course,"This course will help you to:
+
+    Recognize how AI is already integrated into daily life across various tools, platforms, and industries 
+    Identify appropriate use cases for Gen AI across academic, creative, and professional contexts 
+    Evaluate the trustworthiness of AI-generated outputs and check for bias, errors, and hallucinations 
+    Reflect on the social, environmental, and labor impacts of the use and development of AI  
+    Recognize the role of individuals and communities in shaping the future of AI ",Pre-course Self Assessment,3 Hrs,Beginner,N/A,passive,May 2022,July 2025,N/A,Yes,Other (Specify in the 'Comments' column),Ongoing study,Foundations in AI
+,,Introduction to Artificial Intelligence (AI) Engineering,https://www.sei.cmu.edu/training/introduction-to-artificial-intelligence-ai-engineering-elearning/,Software Engineering Institute (SEI),Online course,"This course is designed to:
+
+    Promote the fundamentals of the discipline of AI Engineering
+    Showcase use cases and constraints of AI technologies
+    Build awareness of the AI engineering process
+    Translate cross-functional activities that occur during the AI engineering process
+    Illustrate common decisions and tradeoffs
+    Present design patterns and techniques","Learners should have some familiarity with AI capabilities (e.g., classification systems, natural language processing)",7 Hrs,Beginner,"- Design researchers, usability experts, AI ethicists, and risk and compliance officers
+- Program managers, product managers, and executives
+- Data scientists, software engineers, machine learning (ML) engineers, data engineers, and solution architects",Interactive,N/A,N/A,N/A,Yes,Other (Specify in the 'Comments' column),Pre-arrival,"Foundations in AI, Requires payment of 550 USD"
+,Networking,Cyber Technology — NSC STEM Pathways,https://oli.cmu.edu/courses/cyber-technology-nsc-stem-pathways-open-free/,OLI,Online course,"By the end of this pathway, students will be able to:
+
+Identify and configure PC hardware and software components, including storage interfaces, ports, and appropriate operating system tools.
+
+Apply foundational networking concepts, including routing, addressing, and the purpose of gateways and network translation.
+
+Configure and analyze network routing, including static, dynamic, default, and summarized routes in IPv4 and IPv6 environments.
+
+Demonstrate proficiency with numbering systems, converting and applying decimal, binary, and hexadecimal values in computing and networking contexts.
+
+Apply basic security and addressing principles, including subnet masks, subnetting, and digital certificates.
+
+Interpret and troubleshoot network behavior using routing tables and network diagnostic tools.
+
+Select and correctly use network connection media, including appropriate cables for device communication and configuration.",N/A,1 Year,Not Stated,Not Stated,Interactive,N/A,August 2015,No,Yes,"Demonstrate foundational knowledge in computer architecture, operating systems, networking, and databases.",Transition to industry,"To access the course, the learner must sign up and create an account with their andrewID"
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,Cybersecurity,CERT Applied Data Science for Cybersecurity Certificate Examination,https://www.sei.cmu.edu/training/cert-applied-data-science-cybersecurity-certificate-exam/,Software Engineering Institute (SEI),Certificate program,"This examination provides an objective validation of conceptual knowledge and practical understanding of data analysis for cybersecurity from netflow, malware, and digital forensics activity, as presented in the required courses. The examination consists of 60 multiple choice questions. Students proceed through the examination at their convenience over four hours.","Before registering for this exam, participants must complete the prerequisite courses: Fundamentals of Statistics Applied to Cybersecurity, Advanced Analytics: Netflow, Advanced Analytics: Malware, and Advanced Analytics: Digital Forensics.",4 hours,Not Stated,"This validation exam is required for professionals who wish to pursue the following SEI credentials:
+
+CERT Applied Data Science for Cybersecurity Professional Certificate Program",Interactive,N/A,,N/A,Cannot determine (no access),"Demonstrate foundational knowledge in computer architecture, operating systems, networking, and databases.",Ongoing study,Course Fee: $250
+,,CERT Applied Data Science for Cybersecurity Certificate Package,https://www.sei.cmu.edu/training/cert-applied-data-science-cybersecurity-certificate/,Software Engineering Institute (SEI),Certificate program,,,,,,,,,,Cannot determine (no access),,,"CERT Applied Data Science for Cybersecurity Certificate Package consists of the following courses:
+
+Fundamentals of Statistics Applied to Cybersecurity
+Advanced Analytics: Netflow
+Advanced Analytics: Malware
+Advanced Analytics: Digital Forensics
+CERT Applied Data Science for Cybersecurity Certificate Examination"
+,,CERT Artificial Intelligence (AI) for Cybersecurity Professional Certificate,https://www.sei.cmu.edu/training/cert-ai-cybersecurity-professional-certificate/,Software Engineering Institute (SEI),Certificate program,"After successful completion of this course, you will understand:
+AI technologies in cybersecurity
+strengths, limitations, and appropriate use cases for AI
+how to apply AI tools in a real-world setting
+","Learners should have a basic understanding of cybersecurity, statistics, mathematics, and computer programming. Experience with Python is helpful but not required.",13 hours,Not Stated,This professional certificate program is intended for cybersecurity professionals who operate in technical roles. The course content and hands-on laboratory exercises will prepare learners to apply AI techniques to their work.,Interactive,N/A,,N/A,,"Demonstrate foundational knowledge in computer architecture, operating systems, networking, and databases.",Ongoing study,Course Fee: $1500
+,,CERT Secure Coding in C and C++ Professional Certificate,https://www.sei.cmu.edu/training/cert-secure-coding-professional-certificate/,Software Engineering Institute (SEI),Certificate program,"Students will acquire a working knowledge of common programming errors that lead to software vulnerabilities, how these errors can be exploited, and effective mitigation strategies for preventing the introduction of these errors. In particular, students will learn how to
+improve the overall security of any C or C++ application
+thwart buffer overflows and stack-smashing attacks that exploit insecure string manipulation logic
+avoid vulnerabilities and security flaws resulting from the incorrect use of dynamic memory management functions
+eliminate integer-related problems: integer overflows, sign errors, and truncation errors
+correctly use formatted output functions without introducing format-string vulnerabilities
+avoid I/O vulnerabilities, including race conditions
+","A basic to intermediate understanding of the C and C++ programming languages
+Software security knowledge or experience is not required",24 months,Not Stated,C and C++ Software Developers,Interactive,N/A,,N/A,Cannot determine (no access),"Demonstrate the ability to apply programming skills and software engineering knowledge, including data structures and algorithms, to practical problems.",Pre-arrival,Fee: $1250
+,,CERT Secure Coding in Java Professional Certificate,https://www.sei.cmu.edu/training/cert-secure-coding-java-professional-certificate/,Software Engineering Institute (SEI),Certificate program,"Students will acquire a working knowledge of common programming errors that lead to software vulnerabilities, how these errors can be exploited, and effective mitigation strategies for preventing the introduction of these errors. In particular, students will learn how to
+improve the overall security of any Java application
+avoid injection attacks, such as SQL injection and XSS
+understand Java's memory model, with a thorough grounding of concurrency, and learn how to prevent race conditions while avoiding deadlock
+learn when to throw and catch exceptions
+avoid I/O vulnerabilities, including file-based race conditions
+learn how historical exploits on Java were executed and later disabled","A basic to intermediate understanding of the Java programming language
+Software security knowledge or experience is not required",24 months,Intermediate,Java Software Developers,Interactive,,,N/A,Cannot determine (no access),"Demonstrate the ability to apply programming skills and software engineering knowledge, including data structures and algorithms, to practical problems.",Pre-arrival,Fee: $1250
+,,Advanced Analytics: Digital Forensics,https://www.sei.cmu.edu/training/advanced-analytics-digital-forensics/,Software Engineering Institute (SEI),Online course,"After successful completion of this course, you will:
+be able to identify the PRAVARA method
+have an appreciation for the nuance and complexity of a digital investigation and data science as a whole
+explain the relevance of deepfakes to modern data science
+explain the differences between types of deepfake techniques
+explain the concept of a neural network
+complete tasks involving natural language processing related to insider threat analysis
+complete tasks related to the deepfake detection process","Before registering for this course, participants must complete the Fundamentals of Statistics Applied to Cybersecurity course.
+
+Learners should have some exposure to digital forensics in itself and a working knowledge of a programming language (preferably Python or R). A working knowledge of calculus and linear algebra is helpful.",6 hours,Not Stated,"Those with a particular interest in data science and cybersecurity, but limited experience with both concepts.",Interactive,,,N/A,Cannot determine (no access),"Demonstrate the ability to apply programming skills and software engineering knowledge, including data structures and algorithms, to practical problems.",Ongoing study,Fee: $500
+,,Advanced Analytics: Malware,https://www.sei.cmu.edu/training/advanced-analytics-malware/,Software Engineering Institute (SEI),Online course,"After successful completion of this course, you will:
+be able to understand the fundamentals of analyzing properties of malware captured at run time
+explain and detect self-replication
+be able to recognize and determine ancestry relationships in suspicious requests
+explain the concept of suspicious requests and gather PID statistics
+explain the differences between suspicious and benign requests
+be able to understand the fundamentals of deep learning
+complete tasks involving generating feature vectors and creating a train-test split
+have an appreciation for deep neural networks
+complete tasks involving deep learning
+be able to train a deep neural network to identify malicious processes
+","Before registering for this course, participants must complete the Fundamentals of Statistics Applied to Cybersecurity course.
+
+Learners should have some exposure to malware in itself and a working knowledge of a programming language (preferably Python or R). A working knowledge of calculus and linear algebra is helpful.",5hours,Not Stated,"Those with a particular interest in data science and cybersecurity, but limited experience with both concepts.",Interactive,,,N/A,Cannot determine (no access),"Demonstrate the ability to apply programming skills and software engineering knowledge, including data structures and algorithms, to practical problems.",Ongoing study,Fee: $500
+,,Advanced Analytics: Netflow,https://www.sei.cmu.edu/training/advanced-analytics-netflow/,Software Engineering Institute (SEI),Online course,"After successful completion of this course, you will:
+
+be able to understand the fundamentals of Network Flow architecture
+have an appreciation for flowmeters and records
+explain the differences between types of malicious attacks
+be able to understand network beacons
+identify network beacons with flow data
+connect network beacons to data science","Before registering for this course, participants must complete the Fundamentals of Statistics Applied to Cybersecurity course.
+Learners should have some exposure to NetFlow in itself and a working knowledge of a programming language (preferably Python or R). A working knowledge of calculus and linear algebra is helpful.
+
+",6 hrs,Not Stated,"Those with a particular interest in data science and cybersecurity, but limited experience with both concepts.",Interactive,,,N/A,Cannot determine (no access),,Ongoing study,
+,,,,,,,,,,,,,,,,,,
+,Hardware,PC Hardware,https://oli.cmu.edu/courses/pc-hardware-open-free/,OLI,Online course,,N/A,12 weeks,Beginner,"Students specifically preparing for the CompTIA A+ (Exam 220-901)
+ certification and those with a general interest in learning how to build,
+ troubleshoot, and maintain PC hardware",Interactive,2016,Fall 2017,N/A,Yes,Other (Specify in the 'Comments' column),,"This is a great course that can help students learn  the basic assembly, maintenance, and repair of microcomputer systems.  The skills acquired are Hardware Assembly & Maintenance: Physical installation of motherboards, CPUs, RAM, and storage devices."
+,,Computer hardware video activity series,,Gelfand Center,Video series,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,Software,PC Software,https://oli.cmu.edu/courses/pc-software-open-free/,OLI,Online course,"By the end of these course, students will be able to:
+
+Describe and compare operating systems, including Windows, macOS, and Linux, based on features, requirements, and use cases.
+
+Install and configure operating systems using appropriate methods, system settings, and licensing requirements.
+
+Use operating system utilities and administrative tools to manage system resources, storage, users, and configurations.
+
+Set up and maintain wired and wireless networks and apply appropriate security measures.
+
+Apply preventative maintenance and security practices to protect systems and data.
+
+Identify, respond to, and mitigate security threats, including malware and unauthorized access.
+
+Configure and secure mobile devices and manage connectivity and synchronization.
+
+Apply a structured troubleshooting process to diagnose, resolve, document, and verify technical issues",N/A,12 weeks,Beginner, students prepare for CompTIA A+ Software Exam 220-902.,Interactive,N/A,Fall 2017,N/A,Yes,"Demonstrate foundational knowledge in computer architecture, operating systems, networking, and databases.",Pre-arrival,"Students would learn OS Installation & Management, System Administration & Utilities and Security & Threat Mitigation, however this course is not uptodate since last time  it has been updated is 2017."
+,,Examination of Software Architecture: Principles and Practices,https://www.sei.cmu.edu/training/ software-architecture-principles-practices-elearning/,Software Engineering Institute (SEI),Online course,"Understanding of: Software architecture definitions, influence cycles, quality attributes, patterns/tactics, Attribute-Driven Design, documentation, evaluation, and Agile integration.","Experience in software-reliant systems; familiarity with modern software engineering; ownership of the Software Architecture in Practice, 4th Edition textbook.",18 hours,Beginner,"Professionals who design, develop, or manage the construction of software-reliant systems.",Interactive,N/A,N/A,Yes,Yes,,First semester,"This is a rigorous, academic-style eLearning course offered by the Software Engineering Institute (SEI) at Carnegie Mellon University. It acts as the gateway to their professional certification tracks. While it is ""Foundational,"" the requirement for prior experience in software development suggests it is intended for mid-career professionals rather than students new to programming."
+,,Software Architecture Design and Analysis,https://www.sei.cmu.edu/training/software-architecture-design-analysis/,Software Engineering Institute (SEI),Online Course,,,,,,,,,,,,,
+,Electronics and Energy Fundamentals,STEM Foundations,https://oli.cmu.edu/courses/stem-foundations-open-free/,OLI,Online course,"By the end of this unit, students will be able to:
+
+Apply effective reading strategies to improve comprehension and accurately identify and summarize main ideas and supporting details.
+
+Use correct sentence and paragraph structure to communicate ideas clearly and effectively in writing.
+
+Develop and refine written communication skills, including composing professional email messages using an organized writing process.
+
+Demonstrate effective listening and speaking skills, including professional telephone communication, accurate message delivery, and clear presentations.
+
+Apply time management and organizational skills to support productivity and success in academic and workplace settings.",N/A,10 hours,Beginner,Students who want to strengthen skills in preparation for entering a college program in a STEM career,Interactive,N/A,N/A,N/A,Yes,Other (Specify in the 'Comments' column),Pre-arrival,"The purpose of this course is to allow a student develop key foundational skills in workplace communication and mathematics that are used in various STEM careers.Inaddition to that the course helps a student practice using workplace communication and math skills that he/she may encounter in the workforce.  The skills are Technical Literacy, Professional Writing and 
+Verbal Communication."
+,,STEM Readiness,https://oli.cmu.edu/courses/stem-readiness-open-free/,OLI,Online course,"By the end of this unit, students will be able to:
+
+Apply arithmetic operations to whole numbers, decimals, fractions, and negative values, selecting appropriate operators and rounding results as needed.
+
+Convert and relate numerical forms, including fractions, decimals, percents, scientific notation, and basic algebraic expressions.
+
+Apply measurement concepts and calculations, including perimeter, area, volume, unit conversions, significant digits, and appropriate use of measurement tools.
+
+Use algebraic laws and properties to simplify expressions, apply exponents, substitute values, and solve basic equations.
+
+Rearrange and solve simple algebraic equations to isolate variables using one-step operations and cross-products.
+
+Analyze and quantify data, including calculating mean, median, and mode, creating graphs, and interpreting charts, graphs, and diagrams.
+
+Apply mathematical reasoning and critical thinking to real-world problems and evaluate the validity of results.",N/A,15 hours,Beginner,"For students who want to refresh of a 
+core skill related to STEM careers: 
+Mathematics from arithmetic to beginning algebra.",Interactive,N/A,N/A,N/A,Yes,Other (Specify in the 'Comments' column),Pre-arrival," this course  allows a student to explore and develop the mathematics, critical thinking, workplace communication, and professionalism skills that are used in the types of jobs that a student will be moving into."
+,,Electric Vehicle Technology — NSC STEM Pathways,https://oli.cmu.edu/courses/electric-vehicle-technology-nsc-stem-pathways-open-free/,OLI,Online course,"By the end of this pathway, students will be able to:
+
+Apply foundational principles of chemistry and physics to energy storage, electrical behavior, and power transfer in electric vehicle systems.
+
+Measure, analyze, and interpret mechanical and electrical values using appropriate tools, units, and mathematical techniques.
+
+Identify and explain the components and operation of electric, hybrid, and internal combustion vehicle systems, including propulsion, power electronics, motors, and engines.
+
+Analyze electrical and electronic circuits using DC and AC principles, Ohm’s Law, power transfer concepts, and RCL analysis.
+
+Apply digital logic, numbering systems, and data analysis concepts used in vehicle control systems, sensors, and diagnostics.
+
+Demonstrate safe work practices when working with high-voltage, electronic, and hybrid/electric vehicle components.
+
+Explain energy conversion and alternative energy technologies, including renewable systems and fuel cells.
+
+Use software and control tools to analyze, debug, and support vehicle and industrial control systems.",,1 year,,,Interactive,,Aug 2015,,,,,
+,Simulation and Modelling,Monte Carlo simulations with AI,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+"Problem-solving, analytical and critical thinking",,Argument Diagramming,https://oli.cmu.edu/courses/argument-diagramming-open-free/,OLI,Online course,"This unit covers the technical skills required to construct argument diagrams using software, including mapping complex structures, linked premises, and implied claims. Students will learn to evaluate arguments for validity and strength using deductive and non-deductive reasoning. Finally, the material applies these skills to analyze public arguments by identifying rhetorical elements and diagramming longer texts.",N/A,2 weeks,Not Stated,N/A,Interactive,N/A,Aug 2011,N/A,Yes,,,
+,,Causal and Statistical Reasoning,https://oli.cmu.edu/courses/causal-and-statistical-reasoning-open-free/,OLI,Online course,"This course prepares students to make rational decisions regarding their personal lives and social policy while developing the ability to critically assess claims in media and discussions. Students will explore foundational concepts including causation, association, and independence. Additionally, the curriculum covers strategies for navigating the challenges of inferring causation from association.",N/A,One semester,Not Stated,N/A,Interactive,N/A,N/A,N/A,Yes,,,Captured under Foundational technical knowledge and digital literacy
+,,Concepts of Statistics,https://oli.cmu.edu/courses/concepts-of-statistics/,OLI,Online course,"By the end of this course, students will have developed an understanding of basic statistical concepts and statistical reasoning, while developing their procedural (and technological) competence with basic statistical processes. They will learn to:
+
+develop strong learning strategies for Concepts in Statistics, as well as other online courses.
+determine the goal of a statistical study.
+understand the difference between types of variables .
+interpret data via graphical models.
+use simulation and probability to draw conclusions based on data.",N/A,One semester,Not Stated,N/A,Interactive,N/A,January 2018,N/A,Yes,,Pre-arrival,"Captured under Foundational technical knowledge and digital literacy
+
+Has a cost attached to it"
+,,Logic & Proofs,https://oli.cmu.edu/courses/logic-proofs/,OLI,Online course,"This course provides a comprehensive foundation in formal logic, beginning with the core concepts of statements and arguments before progressing through the syntax, semantics, and proof systems of sentential logic. Students develop the ability to symbolize natural language into logical formulae, construct truth tables, and build formal derivations using inference rules. The course then extends these skills into predicate logic, where students learn to handle quantifiers, variables, and more complex logical structures. Advanced topics including identity, functions, and metamathematical concepts round out the course, equipping students with rigorous tools for logical analysis and proof construction.",N/A,One semester,Not Stated,N/A,Interactive,N/A,N/A,N/A,Yes,"Apply logical and critical thinking to evaluate evidence, assumptions, and implications of academic arguments and engineering decisions.",Pre-arrival,Has a cost attached to it
+,,Public Policy Analysis for Engineers,https://oli.cmu.edu/courses/public-policy-analysis-for-engineers-open-free/,OLI,Online course,"This course equips students with the tools to conduct structured public policy analysis in engineering and technology contexts. Students learn to assess the accuracy and completeness of policy-relevant information, develop neutral policy questions, and evaluate competing solutions against criteria of effectiveness, efficiency, equity, and political acceptability. The course applies these skills consistently across a range of real-world engineering domains including cybersecurity, renewable energy, electric vehicles, and water desalination, bridging the gap between technical expertise and policy decision-making.",N/A,3 hours,Not Stated,N/A,Interactive,N/A,March 2017,N/A,Yes,"Anticipate and mitigate potential issues related to usability, security, and ethics in problem-solving.",Ongoing study,
+,,Responsible Computing,https://oli.cmu.edu/courses/responsible-computing/,OLI,Online course,"By the end of this course, students will have a working knowledge of the rules and standards of CMU’s academic community, with regard to its computing assets. They will learn to:
+
+develop strong learning strategies for Responsible Computing and other online courses.
+recognize appropriate and inappropriate behavior with regard to use of CMU computing resources.
+identify risks to their personal information and resources.
+utilize academic spaces, software, and equipment appropriate to a variety of situations.
+locate and operate useful tools and resources on the University Libraries website.
+search effectively for information on the Web and in academic databases.",N/A,Half a semester,Not Stated,N/A,Interactive,N/A,January 2018,N/A,Yes,"Anticipate and mitigate potential issues related to usability, security, and ethics in problem-solving.",Pre-arrival,
+,,Statistical Reasoning,https://oli.cmu.edu/courses/statistical-reasoning-copy/,OLI,Online course,"By the end of this course, students will have gained an appreciation for the diverse applications of statistics and its relevance to their lives and fields of study. They will learn to:
+
+develop strong learning strategies for Statistical Reasoning, as well as other online courses.
+identify sampling methods used to produce data.
+create and analyze distributions of variables.
+apply the rules of probability to determine the likelihood of an event.
+use a sample to infer (or draw conclusions) about the population from which it was drawn.",N/A,One semester,Not Stated,N/A,Interactive,N/A,December 2017,N/A,Yes,"Solve complex problems by persistently navigating and analyzing multiple levels of abstraction, applying structured, data-informed reasoning to develop innovative and context-aware solutions.",Pre-arrival,Has a free copy but there is one that has a 25 dollar cost
+,,A Framework for Constructive Replication in the Organizational Sciences,,CARMA,Lecture,,,,,,,,,,,,,
+,,A Framework for Methodologically Rigorous Review Articles,,CARMA,Lecture,,,,,,,,,,,,,
+,,Addressing the “Too Much Theory” Problem in Management Research,,CARMA,Lecture,,,,,,,,,,,,,
+,,Basics of Research Methods Collection,,CARMA,Lecture,,,,,,,,,,,,,
+,,"Best-Practice Recommendations for Producers, Evaluators, and Users of Methodological Literature Reviews",,CARMA,Lecture,,,,,,,,,,,,,
+,,Understanding and Detecting Careless Responding in Survey Research,,CARMA,Lecture,,,,,,,,,,,,,
+,,Causal Identification through a Cumulative Body of Research in the Study of Strategy and Organizations,,CARMA,Lecture,,,,,,,,,,,,,
+,,Causal Indicators and Measurement Models,,CARMA,Lecture,,,,,,,,,,,,,
+,,Coding for Discovery,,CARMA,Lecture,,,,,,,,,,,,,
+,,Common Method Bias,,CARMA,Lecture,,,,,,,,,,,,,
+,,"A Tutorial on the Causes, Consequences, and Remedies for Common Method Biases",,CARMA,Lecture,,,,,,,,,,,,,
+,,Confirmatory Factor Analysis Application with R-lavaan,,CARMA,Lecture,,,,,,,,,,,,,
+,,Construct Mixology: Forming New Management Constructs by Combining Old Ones,,CARMA,Lecture,,,,,,,,,,,,,
+,,Content Analysis for Macro Research,,CARMA,Lecture,,,,,,,,,,,,,
+,,Continuum Specification in Construct Validation: A Proposal and Call for Research,,CARMA,Lecture,,,,,,,,,,,,,
+,,Dirty Data,,CARMA,Lecture,,,,,,,,,,,,,
+,,Variation into Elevation: Diversity Paradigms for Explaining Team and Organizational Outcomes,,CARMA,Lecture,,,,,,,,,,,,,
+,,Effect Sizes for Categorical Moderation,,CARMA,Lecture,,,,,,,,,,,,,
+,,Electronic Confederates in Experimental Research,,CARMA,Lecture,,,,,,,,,,,,,
+,,Event Sampling Methods,,CARMA,Lecture,,,,,,,,,,,,,
+,,Extending Methods for Integrating Moderation and Mediation,,CARMA,Lecture,,,1 hr,,,,,,,,,,
+,,Grounded Theory/Discourse Analysis,,CARMA,Lecture,,,,,,,,,,,,,
+,,Insufficient Effort Responding: Impact in Survey Data and Approaches for Detection,,CARMA,Lecture,,,,,,,,,,,,,
+,,Interactions in Latent Variable Models,,CARMA,Lecture,,,,,,,,,,,,,
+,,Interpreting Interaction Effects,,CARMA,Lecture,,,,,,,,,,,,,
+,,Interpreting Results with Practical Significance in Mind: An Overview of the Common Language Effect Size Indices,,CARMA,Lecture,,,,,,,,,,,,,
+,,Introduction to Casual Mediation Analysis,,CARMA,Lecture,,,,,,,,,,,,,
+,,Joy of Coding Data,,CARMA,Lecture,,,,,,,,,,,,,
+,,Latent Difference Score Models,,CARMA,Lecture,,,,,,,,,,,,,
+,,Longitudinal Structural Equation Modeling,,CARMA,Lecture,,,,,,,,,,,,,
+,,Conducting Meta-Analytic Structural Equation Modeling with R,,CARMA,Lecture,,,,,,,,,,,,,
+,,Mixed Methods in Strategy and Organizations Research,,CARMA,Lecture,,,,,,,,,,,,,
+,,Mixing and Matching Methods for Purpose,,CARMA,Lecture,,,,,,,,,,,,,
+,,Modern Prediction Methods,,CARMA,Lecture,,,,,,,,,,,,,
+,,Multiple Imputation for Complex Organizational Data Structures,,CARMA,Lecture,,,,,,,,,,,,,
+,,Multiple Linear Regression,,CARMA,Lecture,,,,,,,,,,,,,
+,,Multiple Linear Regression: Strengthening Conceptual Knowledge and Practical Skills,,CARMA,Lecture,,,,,,,,,,,,,
+,,Multiverse Analysis,,CARMA,Lecture,,,,,,,,,,,,,
+,,Network Analysis,,CARMA,Lecture,,,,,,,,,,,,,
+,,Null Hypothesis Testing,,CARMA,Lecture,,,,,,,,,,,,,
+,,Omitted Variable Bias,,CARMA,Lecture,,,,,,,,,,,,,
+,,Panel Data,,CARMA,Lecture,,,,,,,,,,,,,
+,,Panel Data: Methodological Framework and Analytic Tools,,CARMA,Lecture,,,,,,,,,,,,,
+,,Parcel Indicators in SEM,,CARMA,Lecture,,,,,,,,,,,,,
+,,Partial Least Squares Structural Equation Modeling,,CARMA,Lecture,,,,,,,,,,,,,
+,,Power Analysis with Regression Models: Sample Size Planning for Power and Accuracy,,CARMA,Lecture,,,,,,,,,,,,,
+,,Process Research,,CARMA,Lecture,,,,,,,,,,,,,
+,,Qualitative Data Analysis Beyond Templates,,CARMA,Lecture,,,,,,,,,,,,,
+,,Quantifying Content Validity,https://carmattu.com/video-library/quantifying-content-validity/,CARMA,Lecture,"By the end of this lecture, students should be able to:
+
+Define content validity and distinguish it from other forms of validity to establish its importance in research.
+
+Design a content validation study by selecting appropriate judges and structuring surveys to gather expert feedback.
+
+Apply quantitative metrics to evaluate how well scale items match their intended definitions and distinguish them from related concepts.","A background in psychometrics and statistics, referencing concepts like Confirmatory Factor Analysis and Analysis of Variance ",90 minutes,Not Stated,Academic researchers,passive,"April 13th, 2021",N/A,No,No,"Apply logical and critical thinking to evaluate evidence, assumptions, and implications of academic arguments and engineering decisions.",Ongoing study,The presentation is a workshop companion to the Colquitt et al. (2019) paper on Content Validation Guidelines. It utilizes a continuous Running Example of a construct called Scholarly Orientation to demonstrate concepts.
+,,"Recommendations for Discouraging, Identifying, and Removing Dirty Data in Survey Research",https://carmattu.com/video-library/recommendations-for-discouraging-identifying-and-removing-dirty-data-in-survey-research/,CARMA,Lecture,,,75 minutes ,Not Stated,,passive,"October 4th, 2019",N/A,No,No,"Apply logical and critical thinking to evaluate evidence, assumptions, and implications of academic arguments and engineering decisions.",Ongoing study,
+,,Reflexivity in Research Methods: Boundary Theory and the Researcher Role Continuum,,CARMA,Lecture,"By the end of this lecture, students should be able to:
+
+Define reflexivity and positionality to articulate how a researcher's identity and biases influence the research process.
+
+Apply the Researcher Role Continuum to categorize their own position (e.g., Outsider, Insider, Liminal) relative to their study participants.
+
+Analyze the boundaries between their personal and professional identities to manage potential spillover and ethical challenges in fieldwork.","The content assumes familiarity with qualitative research methods, identity theory, and boundary theory.",60 minutes ,Not Stated,Qualitative researchers,passive,"October 23rd, 2020",N/A,No,No,"Apply logical and critical thinking to evaluate evidence, assumptions, and implications of academic arguments and engineering decisions.",Ongoing study,"This lecture utilizes the ""Researcher Role Continuum"" and boundary theory to help scholars examine how their personal identities and positionality inescapably influence their research process."
+,,Restricted Variance Interactions,,CARMA,Lecture,,,,,,,,,,,,,
+,,Rethinking the Qualitative Research Methods Section,,CARMA,Lecture,,,,,,,,,,,,,
+,,Rigor/Trustworthiness in Qualitative Research,,CARMA,Lecture,,,,,,,,,,,,,
+,,Scale Adaptation in the Organizational Sciences,,CARMA,Lecture,,,,,,,,,,,,,
+,,Structural Equation Models for Experimental Designs,,CARMA,Lecture,,,,,,,,,,,,,
+,,Structural Equation Models for Cooperative Small Group Context: The Interplay of Theory and Method in Goal-Directed Behavior,,CARMA,Lecture,,,,,,,,,,,,,
+,,On the Use of Spline Regression in the Study of Congruence in Organizational Research,,CARMA,Lecture,,,,,,,,,,,,,
+,,Survey Measurement Collection,,CARMA,Lecture,,,,,,,,,,,,,
+,,Testing Causal Hypotheses: Precisely Formulating Causal Hypotheses to Maximize Testability,,CARMA,Lecture,,,,,,,,,,,,,
+,,Text Mining in the Organizational Sciences,,CARMA,Lecture,,,,,,,,,,,,,
+,,The Power of Tools in Qualitative Analysis,,CARMA,Lecture,,,,,,,,,,,,,
+,,Verifying Empirical Research Findings,,CARMA,Lecture,,,,,,,,,,,,,
+,,Video-Based Research Methods,,CARMA,Lecture,,,,,,,,,,,,,
+,,The Promise and Perils of Wearable Sensors in Organizational Research,,CARMA,Lecture,,,,,,,,,,,,,
+,,Writing Our Way out of the Reliability Crisis in Strategy,,CARMA,Lecture,,,,,,,,,,,,,
+,,Analyzing and Interpreting Quantitative Data,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Critical Reading and Writing,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Critical Thinking,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Ethnography for Beginners,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Finding and Avoiding Mistakes in Research,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Fundamentals of Quantitative Text Analysis,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Know Your Numbers,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Research Design in Social Data Science,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Research Question,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Sampling for Beginners,,SAGECampus,Online course,,,,,,,,,,,,,
+,,See Numbers in Data,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Statistical Significance,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Synthesizing Data and Writing Up a Systematic Review,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Unlocking Statistics: From Hypothesis to Outcome,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Using Large Datasets for Research,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Cyber Intelligence for Decision Makers,,Software Engineering Institute (SEI),Online course,,,,,,,,,,,,,
+,,Examination of Software Architecture: Principles and Practices,,Software Engineering Institute (SEI),Online course,,,,,,,,,,,,,
+,,Fundamentals of Statistics Applied to Cybersecurity,,Software Engineering Institute (SEI),Online course,,,,,,,,,,,,,
+,,Software Architecture: Principles and Practices,,Software Engineering Institute (SEI),Online course,,,,,,,,,,,,,
+,,"Understanding Software Architecture, Quality, and Security Through Code Analysis",,Software Engineering Institute (SEI),Online course,,,,,,,,,,,,,
+,,,,LinkedIn Learning ,Online course,,,,,,,,,,,,,
+Communication and information literacy,,Information & Data Literacy,,Core@CMU,Online module,,,,,,,,,,,,,
+,,Reading to Write: Research Articles Across the Disciplines,,OLI,Online course,,,,,,,,,,,,,
+,,Evidence Synthesis for Librarians and Information Specialists,,OLI,Online course,,,,,,,,,,,,,
+,,Systematic Reviews and Meta-Analysis: A Campbell Collaboration Online Course,,OLI,Online course,,,,,,,,,,,,,
+,,Visual Design,,OLI,Online course,,,,,,,,,,,,,
+,,Argument Diagramming,,OLI,Online course,,,,,,,,,,,,,
+,,How to Use Storytelling in Academic Writing,,CARMA,Lecture,,,,,,,,,,,,,
+,,Storytelling Through Statistics,,CARMA,Lecture,,,,,,,,,,,,,
+,,Evaluating Resources,,CMU Libraries,Online guide,,,,,,,,,,,,,
+,,Finding Specific Journal Articles,,CMU Libraries,Online guide,,,,,,,,,,,,,
+,,First-Year Writing General Guide,,CMU Libraries,Online guide,,,,,,,,,,,,,
+,,How to Make a Science Research Poster,,CMU Libraries,Online guide,,,,,,,,,,,"Demonstrate proficiency in academic and professional language, ensuring clarity, precision, and coherence in both written and oral communication.",,
+,,Communication & Presentation,,Core@CMU,Online module,,,,,,,,,,,,,
+,,Choosing a Journal,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Conduct a Literature Review,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Develop Your Search Strategy,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Fact-Checking Sources,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Gather Your Data Online,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Gathering Evidence for a Systematic Review,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Get Your Data from Social Media,,SAGECampus,Online course,,,,,,,,,,,,,
+,,How to Get Published,,SAGECampus,Online course,,,,,,,,,,,,,
+,,How to Write a Journal Article 1: Putting Your Article Together,,SAGECampus,Online course,,,,,,,,,,,,,
+,,How to Write a Journal Article Part 2,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Introduction to Journal Publishing: Why Publish?,,SAGECampus,Online course,,,,,,,,,,,,,
+,,"Peer Review, Feedback, and Decisions",,SAGECampus,Online course,,,,,,,,,,,,,
+,,Power Presenting: Crafting Visually Compelling Data Stories,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Present Your Research,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Publishing for Impact,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Reading Journal Articles,,SAGECampus,Online course,,,,,,,,,,,,,
+,,The Art of ChatGPT Interactions,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Write Better Data Stories,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Academic Publishing in STEM,,SASC Communication Support,Recorded workshop,,,,,,,,,,,,,
+,,Communicating Data to Non-Experts,,SASC Communication Support,Recorded workshop,,,,,,,,,,,,,
+,,Making the Case for Your Research,,SASC Communication Support,Recorded workshop,,,,,,,,,,,,,
+,,Paraphrasing and Citation,,SASC Communication Support,Recorded workshop,,,,,,,,,,,,,
+,,Strategies for Concise Writing,,SASC Communication Support,Recorded workshop,,,,,,,,,,,,,
+,,Writing a Literature Review,,SASC Communication Support,Recorded workshop,,,,,,,,,,,,,
+,,Basic Structure of an Email,,SASC Communication Support,Short video,,,,,,,,,,,,,
+,,Creating Concise Sentences,,SASC Communication Support,Short video,,,,,,,,,,,,,
+,,Data Visualization,,SASC Communication Support,Short video,,,,,,,,,,,,,
+,,Data Visualization - Tables and Charts,,SASC Communication Support,Short video,,,,,,,,,,,,,
+,,Designing Effective Power Points,,SASC Communication Support,Short video,,,,,,,,,,,,,
+,,Diversity Statements,,SASC Communication Support,Short video,,,,,,,,,,,,,
+,,Executive Summaries,,SASC Communication Support,Short video,,,,,,,,,,,,,
+,,IMRD Structure,,SASC Communication Support,Short video,,,,,,,,,,,,,
+,,Known-New Contract,,SASC Communication Support,Short video,,,,,,,,,,,,,
+,,Law School Statement of Purpose,,SASC Communication Support,Short video,,,,,,,,,,,,,
+,,Literature Reviews,,SASC Communication Support,Short video,,,,,,,,,,,,,
+,,Presentation Strategies,,SASC Communication Support,Short video,,,,,,,,,,,,,
+,,Presenting Research Posters at Conferences,,SASC Communication Support,Short video,,,,,,,,,,,,,
+,,Research Statements,,SASC Communication Support,Short video,,,,,,,,,,,,,
+,,Starter Phrases for Academic Writing,,SASC Communication Support,Short video,,,,,,,,,,,,,
+,,Thesis Statements and Topic Sentences,,SASC Communication Support,Short video,,,,,,,,,,,,,
+,,Topic Sentences (Bottom Line Up Front),,SASC Communication Support,Short video,,,,,,,,,,,,,
+,,Using Source Materials for Your Purposes,,SASC Communication Support,Short video,,,,,,,,,,,,,
+,,Using Source Materials for Your Purposes - The Paraphrasing Spectrum,,SASC Communication Support,Short video,,,,,,,,,,,,,
+,,Documenting Software Architectures,,Software Engineering Institute (SEI),Online course,,,,,,,,,,,,,
+,,,,LinkedIn Learning ,Online course,,,,,,,,,,,,,
+Collaboration and intercultural competence,,Collaboration & Teamwork,,Core@CMU,Online module,,,,,,,,,,,,,
+,,Intercultural & Global Literacy,,Core@CMU,Online module,,,,,,,,,,,,,
+,,CollaborativeU,,OLI,Online course,,,,,,,,,,,,,
+,,ConflictU,,OLI,Online course,,,,,,,,,,,,,
+,,MeetingU,,OLI,Online course,,,,,,,,,,,,,
+,,,,LinkedIn Learning ,Online course,,,,,,,,,,,,,
+Study and self-management skills,,Student Cognition Toolbox — Study skills and when to use them,,OLI,Online course,,,,,,,,,,,,,
+,,Citation and Reference Management,,CMU Libraries,Online guide,,,,,,,,,,,,,
+,,Healthy Relationships Module,,CMU Graduate Student Orientation,Online module,,,,,,,,,,,,,
+,,Article Acceptance to Promotion,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Do Your Interviews,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Grant Writing for Beginners,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Plan Your Final Research Project,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Plan Your Focus Group,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Plan Your Project,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Research Proposal,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Run Your Focus Group,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Submission and Final Touches,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Working With Transcribed Data,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Write a Questionnaire,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Write Your Final Research Project,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Turning in Your First Paper at CMU Workshop,,SASC Communication Support,Workshop,,,,,,,,,,,,,
+,,,,LinkedIn Learning ,Online course,,,,,,,,,,,,,
+Ethical and professional awareness,,Responsible Computing,,OLI,Online course,,,,,,,,,,,,,
+,,Public Policy Analysis for Engineers,,OLI,Online course,,,,,,,,,,,,,
+,,Questionable Research Practices,,CARMA,Lecture,,,,,,,,,,,,,
+,,Office of Community Responsibility - Academic Integrity Module for Masters Students,,CMU,Online module,,,,,,,,,,,,,
+,,University Policy on Academic Integrity,,CMU,Policy document,,,,,,,,,,,,,
+,,Academic Integrity: The Carnegie Mellon Code,,CMU Graduate Student Orientation,Online module,,,,,,,,,,,,,
+,,Getting Ethical Approval for Your Project,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Navigating Institutional Racism Within Higher Education,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Conducting Culturally Responsive Research,,SAGECampus,Online course,,,,,,,,,,,,,
+,,Research Ethics for Beginners,,SAGECampus,Online course,,,,,,,,,,,,,
+,,CERT Cybersecurity Leadership Examination,,Software Engineering Institute (SEI),Certificate exam,,,,,,,,,,,,,
+,,Insider Risk Management Measures of Effectiveness Certificate Examination,,Software Engineering Institute (SEI),Certificate exam,,,,,,,,,,,,,
+,,Insider Threat Program Manager Certificate Examination,,Software Engineering Institute (SEI),Certificate exam,,,,,,,,,,,,,
+,,CERT Certificate in Digital Forensics,,Software Engineering Institute (SEI),Certificate program,,,,,,,,,,,,,
+,,CERT Cybersecurity Engineering and Software Assurance Professional Certificate,,Software Engineering Institute (SEI),Certificate program,,,,,,,,,,,,,
+,,Assessing Information Security Risk Using the OCTAVE Approach,,Software Engineering Institute (SEI),Online course,,,,,,,,,,,,,
+,,Building an Insider Threat Program,,Software Engineering Institute (SEI),Online course,,,,,,,,,,,,,
+,,Overview of Creating and Managing CSIRTs,,Software Engineering Institute (SEI),Online course,,,,,,,,,,,,,
+,,Overview of Insider Threat Concepts and Activities,,Software Engineering Institute (SEI),Online course,,,,,,,,,,,,,
+,,Insider Threat Awareness Training,,Software Engineering Institute (SEI),Training,,,,,,,,,,,,,
+,,,,LinkedIn Learning ,Online course,,,,,,,,,,,,,
