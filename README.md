@@ -1,6 +1,6 @@
 # 🎓 Course Explorer — Student Success
 
-A modern, scalable Streamlit application for showcasing curated courses from an Excel/CSV dataset. Built for TA-assisted advising and student success support.
+A modern Streamlit application for curating and discovering courses from a CSV dataset. Built for TA-assisted advising and student success support at CMpport.
 
 ## ✨ Features
 
