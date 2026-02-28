@@ -161,6 +161,32 @@ def load_data(path: str = "Online_curation.csv") -> pd.DataFrame:
 df = load_data()
 
 # ─────────────────────────────────────────────────────────────────────────────
+# LOAD TUTOR DATA
+# ─────────────────────────────────────────────────────────────────────────────
+@st.cache_data(show_spinner="Loading tutor data…")
+def load_tutors(path: str = "tutors.csv") -> pd.DataFrame:
+    try:
+        tutors = pd.read_csv(path, dtype=str)
+        tutors = tutors.fillna("")
+        # Parse expertise tags into lists
+        tutors["expertise_list"] = tutors["expertise_tags"].apply(
+            lambda x: [tag.strip() for tag in str(x).split(",") if tag.strip()]
+        )
+        return tutors
+    except FileNotFoundError:
+        # Return empty dataframe if file doesn't exist
+        return pd.DataFrame(columns=["tutor_id", "tutor_name", "expertise_tags", 
+                                     "availability_summary", "booking_link", "expertise_list"])
+
+tutors_df = load_tutors()
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SESSION STATE FOR TUTOR BOOKING FLOW
+# ─────────────────────────────────────────────────────────────────────────────
+if 'show_tutor_section' not in st.session_state:
+    st.session_state.show_tutor_section = False
+
+# ─────────────────────────────────────────────────────────────────────────────
 # SIDEBAR FILTERS
 # ─────────────────────────────────────────────────────────────────────────────
 with st.sidebar:
@@ -182,10 +208,8 @@ with st.sidebar:
     domains = sorted({d for d in df["domain"].unique() if d})
     sel_domains = st.multiselect("Competency Domain", domains, help="Filter by subject area")
 
-    all_skills: list[str] = sorted(
-        {tag for tags in df["skill_tags"] for tag in tags}
-    )
-    sel_skills = st.multiselect("Priority Skills", all_skills, help="Filter by specific skills")
+    focus_areas = sorted({f for f in df["focus_area"].unique() if f})
+    sel_focus = st.multiselect("Focus Areas", focus_areas, help="Filter by focus area within domain")
 
     levels = sorted({l for l in df["level"].unique() if l})
     sel_levels = st.multiselect("Level", levels, help="Beginner, Intermediate, Advanced")
@@ -242,12 +266,8 @@ if search_q:
 if sel_domains:
     mask &= df["domain"].isin(sel_domains)
 
-if sel_skills:
-    mask &= df["skill_tags"].apply(
-        lambda tags: any(
-            any(sel.lower() in tag.lower() for tag in tags) for sel in sel_skills
-        )
-    )
+if sel_focus:
+    mask &= df["focus_area"].isin(sel_focus)
 
 if sel_levels:
     mask &= df["level"].isin(sel_levels)
@@ -273,26 +293,181 @@ if not show_no_link:
 filtered = df[mask].copy()
 
 # ─────────────────────────────────────────────────────────────────────────────
-# HEADER
+# HEADER WITH TUTOR BUTTON
 # ─────────────────────────────────────────────────────────────────────────────
-st.markdown("""
-<div class="main-header">
-    <h1>🎓 Course Explorer — Student Success</h1>
-    <div class="subtitle">Curated resources aligned to program competencies · For TA-assisted advising</div>
-</div>
+# Custom button styling
+button_label = "🎓 Get Peer Tutor Support" if not st.session_state.show_tutor_section else "📚 Back to Courses"
+button_gradient = "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)" if st.session_state.theme == 'dark' else "linear-gradient(135deg, #3b82f6 0%, #6366f1 100%)"
+button_hover_shadow = "0 8px 24px rgba(99, 102, 241, 0.4)" if st.session_state.theme == 'dark' else "0 8px 24px rgba(59, 130, 246, 0.3)"
+
+st.markdown(f"""
+<style>
+.stButton > button[kind="primary"] {{
+    background: {button_gradient} !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 0.75rem 1.5rem !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+    letter-spacing: 0.3px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2) !important;
+}}
+.stButton > button[kind="primary"]:hover {{
+    transform: translateY(-2px) !important;
+    box-shadow: {button_hover_shadow} !important;
+}}
+</style>
 """, unsafe_allow_html=True)
 
-# ─────────────────────────────────────────────────────────────────────────────
-# QUICK STATS
-# ─────────────────────────────────────────────────────────────────────────────
-all_tags_flat = [tag for tags in df["skill_tags"] for tag in tags]
-from collections import Counter
-top_skills = [s for s, _ in Counter(all_tags_flat).most_common(5)]
+col_header, col_button = st.columns([4, 1])
+with col_header:
+    st.markdown("""
+    <div class="main-header">
+        <h1>🎓 Course Explorer — Student Success</h1>
+        <div class="subtitle">Curated resources aligned to program competencies · For TA-assisted advising</div>
+    </div>
+    """, unsafe_allow_html=True)
+with col_button:
+    st.markdown("<div style='margin-top: 1.5rem;'></div>", unsafe_allow_html=True)
+    if st.button(button_label, use_container_width=True, type="primary", key="tutor_toggle_main"):
+        st.session_state.show_tutor_section = not st.session_state.show_tutor_section
+        st.rerun()
 
-# Duration coverage
-dur_count = int(df["duration_hours"].notna().sum())
+# ─────────────────────────────────────────────────────────────────────────────
+# PEER TUTOR BOOKING SECTION
+# ─────────────────────────────────────────────────────────────────────────────
+if st.session_state.show_tutor_section:
+    st.markdown("---")
+    st.markdown("## 👥 Peer Tutor Booking")
+    st.markdown("""
+    <div class="info-box">
+        <strong>How it works:</strong> Select a skill area where you need support, browse available peer tutors, 
+        and book a session directly through their Google Calendar.
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # Get all unique Focus Areas from course data
+    all_focus_areas = sorted({f for f in df["focus_area"].unique() if f and f.strip()})
+    
+    # Skill gap selection
+    col1, col2 = st.columns([2, 3])
+    with col1:
+        selected_focus = st.selectbox(
+            "Select Focus Area for Support",
+            [""] + all_focus_areas,
+            help="Choose the focus area where you need tutoring support"
+        )
+    
+    if selected_focus:
+        # Filter tutors by expertise matching selected focus area
+        matching_tutors = tutors_df[
+            tutors_df["expertise_list"].apply(
+                lambda exp_list: any(selected_focus.lower() in exp.lower() for exp in exp_list)
+            )
+        ]
+        
+        if len(matching_tutors) > 0:
+            st.markdown(f"### 🎯 Found {len(matching_tutors)} tutor(s) for: **{selected_focus}**")
+            st.markdown("---")
+            
+            # Enhanced styling for tutor section
+            st.markdown(f"""
+            <style>
+            /* Tutor booking button styling */
+            .stLinkButton > a {{
+                background: {button_gradient} !important;
+                color: white !important;
+                border: none !important;
+                border-radius: 10px !important;
+                padding: 0.65rem 1.25rem !important;
+                font-weight: 600 !important;
+                font-size: 0.9rem !important;
+                text-decoration: none !important;
+                display: inline-block !important;
+                width: 100% !important;
+                text-align: center !important;
+                transition: all 0.3s ease !important;
+                box-shadow: 0 3px 10px rgba(99, 102, 241, 0.2) !important;
+            }}
+            .stLinkButton > a:hover {{
+                transform: translateY(-2px) !important;
+                box-shadow: {button_hover_shadow} !important;
+            }}
+            /* Enhanced tutor cards */
+            .course-card {{
+                transition: all 0.3s ease !important;
+            }}
+            .course-card:hover {{
+                transform: translateY(-6px) !important;
+            }}
+            </style>
+            """, unsafe_allow_html=True)
+            
+            # Display tutor cards in grid
+            cols_per_row = 3
+            rows = [matching_tutors.iloc[i:i + cols_per_row] for i in range(0, len(matching_tutors), cols_per_row)]
+            
+            for row_tutors in rows:
+                cols = st.columns(cols_per_row)
+                for col, (_, tutor) in zip(cols, row_tutors.iterrows()):
+                    with col:
+                        # Tutor card
+                        tutor_card_html = f"""
+                        <div class="course-card" style="min-height: 280px;">
+                            <div class="card-title">👤 {tutor['tutor_name']}</div>
+                            <div class="card-meta">Peer Tutor</div>
+                            <div style="margin: 0.75rem 0;">
+                                <strong style="font-size: 0.8rem; color: {'#94a3b8' if st.session_state.theme == 'dark' else '#64748b'};">Expertise:</strong><br>
+                                <div style="margin-top: 0.5rem;">
+                                    {"".join(f'<span class="badge badge-skill" style="font-size:0.65rem;">{exp.strip()}</span>' for exp in tutor['expertise_tags'].split(',')[:4])}
+                                </div>
+                            </div>
+                            <div class="card-sub">
+                                📅 {tutor['availability_summary']}
+                            </div>
+                        </div>
+                        """
+                        st.markdown(tutor_card_html, unsafe_allow_html=True)
+                        
+                        # Booking button
+                        if tutor['booking_link']:
+                            st.link_button(
+                                "📅 Book Session",
+                                tutor['booking_link'],
+                                use_container_width=True,
+                                type="primary"
+                            )
+                        else:
+                            st.button("📅 Booking Unavailable", disabled=True, use_container_width=True)
+                        
+                        st.markdown("<div style='margin-bottom:1.5rem;'></div>", unsafe_allow_html=True)
+        else:
+            st.warning(f"No tutors found with expertise in **{selected_focus}**. Try selecting a different focus area.")
+    else:
+        st.info("👆 Select a focus area above to see available tutors")
+    
+    st.markdown("---")
+    if st.button("← Back to Course Explorer", use_container_width=False):
+        st.session_state.show_tutor_section = False
+        st.rerun()
+    st.markdown("---")
 
-stats_html = f"""
+# ─────────────────────────────────────────────────────────────────────────────
+# COURSE EXPLORER SECTION (Only show when tutor section is hidden)
+# ─────────────────────────────────────────────────────────────────────────────
+if not st.session_state.show_tutor_section:
+    # ─────────────────────────────────────────────────────────────────────────────
+    # QUICK STATS
+    # ─────────────────────────────────────────────────────────────────────────────
+    from collections import Counter
+    all_tags_flat = [tag for tags in df["skill_tags"] for tag in tags]
+    top_skills = [s for s, _ in Counter(all_tags_flat).most_common(5)]
+
+    # Duration coverage
+    dur_count = int(df["duration_hours"].notna().sum())
+
+    stats_html = f"""
 <div class="stat-row">
   <div class="stat-card">
     <div class="stat-value">{len(df)}</div>
@@ -318,129 +493,130 @@ stats_html = f"""
   </div>
 </div>
 """
-st.markdown(stats_html, unsafe_allow_html=True)
-st.markdown("---")
+    st.markdown(stats_html, unsafe_allow_html=True)
+    st.markdown("---")
+
+    # ─────────────────────────────────────────────────────────────────────────────
+    # RESULT COUNT & SORTING
+    # ─────────────────────────────────────────────────────────────────────────────
+    if filtered.empty:
+        st.warning("No courses match your filters. Try widening your search.")
+        st.stop()
+
+    # Sorting and view options
+    col1, col2, col3, col4 = st.columns([2, 2, 1, 1])
+    with col1:
+        st.markdown(
+            f"<p style='color:#94a3b8; font-size:.85rem; margin-top: 0.5rem;'>Showing <b style='color:#f1f5f9'>{len(filtered)}</b> of {len(df)} courses</p>",
+            unsafe_allow_html=True,
+        )
+    with col2:
+        sort_by = st.selectbox(
+            "Sort by",
+            ["Relevance", "Duration (Low to High)", "Duration (High to Low)", "Title (A-Z)", "Title (Z-A)"],
+            label_visibility="collapsed"
+        )
+    with col3:
+        view_mode = st.selectbox("View", ["Grid", "List"], label_visibility="collapsed")
+    with col4:
+        # Export to CSV
+        csv_data = filtered[["title", "domain", "platform", "level", "format", "duration_hours", "lms_link", "short_description"]].to_csv(index=False)
+        st.download_button(
+            label="📥 Export",
+            data=csv_data,
+            file_name=f"courses_export_{datetime.now().strftime('%Y%m%d')}.csv",
+            mime="text/csv",
+            use_container_width=True
+        )
+
+    # Apply sorting
+    if sort_by == "Duration (Low to High)":
+        filtered = filtered.sort_values("duration_hours", na_position='last')
+    elif sort_by == "Duration (High to Low)":
+        filtered = filtered.sort_values("duration_hours", ascending=False, na_position='last')
+    elif sort_by == "Title (A-Z)":
+        filtered = filtered.sort_values("title")
+    elif sort_by == "Title (Z-A)":
+        filtered = filtered.sort_values("title", ascending=False)
+
+    st.markdown("---")
 
 # ─────────────────────────────────────────────────────────────────────────────
-# RESULT COUNT & SORTING
-# ─────────────────────────────────────────────────────────────────────────────
-if filtered.empty:
-    st.warning("No courses match your filters. Try widening your search.")
-    st.stop()
+    # ─────────────────────────────────────────────────────────────────────────────
+    # CARD GRID — 3 columns or list view
+    # ─────────────────────────────────────────────────────────────────────────────
+    DOMAIN_COLORS = [
+        "#1d4ed8", "#6d28d9", "#0e7490", "#065f46", "#92400e",
+        "#be185d", "#b45309", "#1e3a5f", "#4a044e", "#134e4a",
+    ]
+    domain_list = sorted({d for d in df["domain"].unique() if d})
+    domain_color_map = {d: DOMAIN_COLORS[i % len(DOMAIN_COLORS)] for i, d in enumerate(domain_list)}
 
-# Sorting and view options
-col1, col2, col3, col4 = st.columns([2, 2, 1, 1])
-with col1:
-    st.markdown(
-        f"<p style='color:#94a3b8; font-size:.85rem; margin-top: 0.5rem;'>Showing <b style='color:#f1f5f9'>{len(filtered)}</b> of {len(df)} courses</p>",
-        unsafe_allow_html=True,
-    )
-with col2:
-    sort_by = st.selectbox(
-        "Sort by",
-        ["Relevance", "Duration (Low to High)", "Duration (High to Low)", "Title (A-Z)", "Title (Z-A)"],
-        label_visibility="collapsed"
-    )
-with col3:
-    view_mode = st.selectbox("View", ["Grid", "List"], label_visibility="collapsed")
-with col4:
-    # Export to CSV
-    csv_data = filtered[["title", "domain", "platform", "level", "format", "duration_hours", "lms_link", "short_description"]].to_csv(index=False)
-    st.download_button(
-        label="📥 Export",
-        data=csv_data,
-        file_name=f"courses_export_{datetime.now().strftime('%Y%m%d')}.csv",
-        mime="text/csv",
-        use_container_width=True
-    )
+    if view_mode == "Grid":
+        COLS = 3
+        rows = [filtered.iloc[i: i + COLS] for i in range(0, len(filtered), COLS)]
+    else:
+        COLS = 1
+        rows = [filtered.iloc[i: i + COLS] for i in range(0, len(filtered), COLS)]
 
-# Apply sorting
-if sort_by == "Duration (Low to High)":
-    filtered = filtered.sort_values("duration_hours", na_position='last')
-elif sort_by == "Duration (High to Low)":
-    filtered = filtered.sort_values("duration_hours", ascending=False, na_position='last')
-elif sort_by == "Title (A-Z)":
-    filtered = filtered.sort_values("title")
-elif sort_by == "Title (Z-A)":
-    filtered = filtered.sort_values("title", ascending=False)
+    for row_batch in rows:
+        cols = st.columns(COLS)
+        for col, (_, row) in zip(cols, row_batch.iterrows()):
+            with col:
+                domain_val = row.get("domain", "") or ""
+                level_val  = row.get("level", "")  or ""
+                fmt_val    = row.get("format", "")  or ""
+                journey    = row.get("journey_stage", "") or ""
+                platform   = row.get("platform", "") or ""
+                link       = row.get("lms_link", "")  or ""
+                dur_h      = row.get("duration_hours")
+                res_type   = row.get("resource_type", "") or ""
+                desc       = row.get("short_description", "") or ""
+                full_desc  = row.get("full_description", "") or ""
+                prereqs    = row.get("prerequisites", "") or ""
+                skills     = row.get("skill_tags", []) or []
+                title      = row.get("title", "(Untitled)")
+                
+                # Ensure all string fields are actually strings
+                domain_val = str(domain_val) if pd.notna(domain_val) else ""
+                level_val = str(level_val) if pd.notna(level_val) else ""
+                fmt_val = str(fmt_val) if pd.notna(fmt_val) else ""
+                journey = str(journey) if pd.notna(journey) else ""
+                platform = str(platform) if pd.notna(platform) else ""
+                link = str(link) if pd.notna(link) else ""
+                res_type = str(res_type) if pd.notna(res_type) else ""
+                desc = str(desc) if pd.notna(desc) else ""
+                full_desc = str(full_desc) if pd.notna(full_desc) else ""
+                prereqs = str(prereqs) if pd.notna(prereqs) else ""
+                title = str(title) if pd.notna(title) else "(Untitled)"
 
-st.markdown("---")
+                # Domain color
+                d_color = domain_color_map.get(domain_val, "#374151")
+                d_fg = "#bfdbfe"
 
-# ─────────────────────────────────────────────────────────────────────────────
-# CARD GRID — 3 columns or list view
-# ─────────────────────────────────────────────────────────────────────────────
-DOMAIN_COLORS = [
-    "#1d4ed8", "#6d28d9", "#0e7490", "#065f46", "#92400e",
-    "#be185d", "#b45309", "#1e3a5f", "#4a044e", "#134e4a",
-]
-domain_list = sorted({d for d in df["domain"].unique() if d})
-domain_color_map = {d: DOMAIN_COLORS[i % len(DOMAIN_COLORS)] for i, d in enumerate(domain_list)}
-
-if view_mode == "Grid":
-    COLS = 3
-    rows = [filtered.iloc[i: i + COLS] for i in range(0, len(filtered), COLS)]
-else:
-    COLS = 1
-    rows = [filtered.iloc[i: i + COLS] for i in range(0, len(filtered), COLS)]
-
-for row_batch in rows:
-    cols = st.columns(COLS)
-    for col, (_, row) in zip(cols, row_batch.iterrows()):
-        with col:
-            domain_val = row.get("domain", "") or ""
-            level_val  = row.get("level", "")  or ""
-            fmt_val    = row.get("format", "")  or ""
-            journey    = row.get("journey_stage", "") or ""
-            platform   = row.get("platform", "") or ""
-            link       = row.get("lms_link", "")  or ""
-            dur_h      = row.get("duration_hours")
-            res_type   = row.get("resource_type", "") or ""
-            desc       = row.get("short_description", "") or ""
-            full_desc  = row.get("full_description", "") or ""
-            prereqs    = row.get("prerequisites", "") or ""
-            skills     = row.get("skill_tags", []) or []
-            title      = row.get("title", "(Untitled)")
-            
-            # Ensure all string fields are actually strings
-            domain_val = str(domain_val) if pd.notna(domain_val) else ""
-            level_val = str(level_val) if pd.notna(level_val) else ""
-            fmt_val = str(fmt_val) if pd.notna(fmt_val) else ""
-            journey = str(journey) if pd.notna(journey) else ""
-            platform = str(platform) if pd.notna(platform) else ""
-            link = str(link) if pd.notna(link) else ""
-            res_type = str(res_type) if pd.notna(res_type) else ""
-            desc = str(desc) if pd.notna(desc) else ""
-            full_desc = str(full_desc) if pd.notna(full_desc) else ""
-            prereqs = str(prereqs) if pd.notna(prereqs) else ""
-            title = str(title) if pd.notna(title) else "(Untitled)"
-
-            # Domain color
-            d_color = domain_color_map.get(domain_val, "#374151")
-            d_fg = "#bfdbfe"
-
-            # Duration display
-            if dur_h is not None:
-                if dur_h >= 100:
-                    dur_display = f"~{int(dur_h/10)*10}h est."
+                # Duration display
+                if dur_h is not None:
+                    if dur_h >= 100:
+                        dur_display = f"~{int(dur_h/10)*10}h est."
+                    else:
+                        dur_display = f"{dur_h}h"
                 else:
-                    dur_display = f"{dur_h}h"
-            else:
-                dur_display = row.get("length_raw", "") or "Duration TBD"
+                    dur_display = row.get("length_raw", "") or "Duration TBD"
 
-            # Build badge HTML
-            badges = ""
-            if domain_val and domain_val.strip():
-                badges += f'<span class="badge badge-domain">{str(domain_val)[:30]}</span>'
-            if level_val and level_val.strip():
-                badges += f'<span class="badge badge-level">{str(level_val)}</span>'
-            if fmt_val and fmt_val.strip():
-                badges += f'<span class="badge badge-format">{str(fmt_val)}</span>'
-            if journey and journey.strip():
-                badges += f'<span class="badge badge-journey">{str(journey)}</span>'
-            if platform and platform.strip():
-                badges += f'<span class="badge badge-platform">{str(platform)[:20]}</span>'
+                # Build badge HTML
+                badges = ""
+                if domain_val and domain_val.strip():
+                    badges += f'<span class="badge badge-domain">{str(domain_val)[:30]}</span>'
+                if level_val and level_val.strip():
+                    badges += f'<span class="badge badge-level">{str(level_val)}</span>'
+                if fmt_val and fmt_val.strip():
+                    badges += f'<span class="badge badge-format">{str(fmt_val)}</span>'
+                if journey and journey.strip():
+                    badges += f'<span class="badge badge-journey">{str(journey)}</span>'
+                if platform and platform.strip():
+                    badges += f'<span class="badge badge-platform">{str(platform)[:20]}</span>'
 
-            card_html = f"""
+                card_html = f"""
 <div class="course-card">
   <div class="card-title">{title}</div>
   <div>{badges}</div>
@@ -448,98 +624,98 @@ for row_batch in rows:
   <div class="card-description">{desc or '<em style="color:#64748b">No description available.</em>'}</div>
 </div>
 """
-            st.markdown(card_html, unsafe_allow_html=True)
+                st.markdown(card_html, unsafe_allow_html=True)
 
-            # ── Clickable card with dialog ────────────────────────────────
-            if st.button("View Details", key=f"view_{row['id']}", use_container_width=True, type="primary"):
-                with st.expander("📖 Course Details", expanded=True):
-                    st.markdown(f"### {title}")
-                    
-                    # Course metadata in columns
-                    meta_col1, meta_col2 = st.columns(2)
-                    with meta_col1:
-                        if domain_val and domain_val.strip():
-                            st.markdown(f"**Domain:** {domain_val}")
-                        if platform and platform.strip():
-                            st.markdown(f"**Platform:** {platform}")
-                        if level_val and level_val.strip():
-                            st.markdown(f"**Level:** {level_val}")
-                    with meta_col2:
-                        if fmt_val and fmt_val.strip():
-                            st.markdown(f"**Format:** {fmt_val}")
-                        if dur_display:
-                            st.markdown(f"**Duration:** {dur_display}")
-                        if journey and journey.strip():
-                            st.markdown(f"**Journey Stage:** {journey}")
-                    
-                    st.markdown("---")
-                    
-                    # Learning outcomes
-                    if full_desc and isinstance(full_desc, str) and full_desc.strip() and full_desc not in ("nan", "None"):
-                        st.markdown("**Learning Outcomes:**")
-                        st.markdown(full_desc[:800] + ("…" if len(full_desc) > 800 else ""))
-                    
-                    # Prerequisites
-                    if prereqs and isinstance(prereqs, str) and prereqs.strip() and prereqs not in ("nan", "N/A", "None", ""):
-                        st.markdown("**Prerequisites:**")
-                        st.markdown(prereqs[:300])
-                    
-                    # Skills - only show if they're actual skills, not long descriptions
-                    if skills and len(skills) > 0:
-                        # Filter out very long skill descriptions (likely the competency text)
-                        clean_skills = [s for s in skills if len(s) < 100]
-                        if clean_skills:
-                            st.markdown("**Skills Covered:**")
-                            st.markdown(", ".join(clean_skills[:10]))  # Limit to 10 skills
-                    
-                    st.markdown("---")
-                    
-                    # Course link
-                    if link and link.strip() and link not in ("nan", "None", ""):
-                        st.link_button("🔗 Open Course", link, use_container_width=True)
-                    else:
-                        st.info("No course link available.")
+                # ── Clickable card with dialog ────────────────────────────────
+                if st.button("View Details", key=f"view_{row['id']}", use_container_width=True, type="primary"):
+                    with st.expander("📖 Course Details", expanded=True):
+                        st.markdown(f"### {title}")
+                        
+                        # Course metadata in columns
+                        meta_col1, meta_col2 = st.columns(2)
+                        with meta_col1:
+                            if domain_val and domain_val.strip():
+                                st.markdown(f"**Domain:** {domain_val}")
+                            if platform and platform.strip():
+                                st.markdown(f"**Platform:** {platform}")
+                            if level_val and level_val.strip():
+                                st.markdown(f"**Level:** {level_val}")
+                        with meta_col2:
+                            if fmt_val and fmt_val.strip():
+                                st.markdown(f"**Format:** {fmt_val}")
+                            if dur_display:
+                                st.markdown(f"**Duration:** {dur_display}")
+                            if journey and journey.strip():
+                                st.markdown(f"**Journey Stage:** {journey}")
+                        
+                        st.markdown("---")
+                        
+                        # Learning outcomes
+                        if full_desc and isinstance(full_desc, str) and full_desc.strip() and full_desc not in ("nan", "None"):
+                            st.markdown("**Learning Outcomes:**")
+                            st.markdown(full_desc[:800] + ("…" if len(full_desc) > 800 else ""))
+                        
+                        # Prerequisites
+                        if prereqs and isinstance(prereqs, str) and prereqs.strip() and prereqs not in ("nan", "N/A", "None", ""):
+                            st.markdown("**Prerequisites:**")
+                            st.markdown(prereqs[:300])
+                        
+                        # Skills - only show if they're actual skills, not long descriptions
+                        if skills and len(skills) > 0:
+                            # Filter out very long skill descriptions (likely the competency text)
+                            clean_skills = [s for s in skills if len(s) < 100]
+                            if clean_skills:
+                                st.markdown("**Skills Covered:**")
+                                st.markdown(", ".join(clean_skills[:10]))  # Limit to 10 skills
+                        
+                        st.markdown("---")
+                        
+                        # Course link
+                        if link and link.strip() and link not in ("nan", "None", ""):
+                            st.link_button("🔗 Open Course", link, use_container_width=True)
+                        else:
+                            st.info("No course link available.")
 
-            st.markdown("<div style='margin-bottom:1.2rem;'></div>", unsafe_allow_html=True)
+                st.markdown("<div style='margin-bottom:1.2rem;'></div>", unsafe_allow_html=True)
 
-# ─────────────────────────────────────────────────────────────────────────────
-# FOOTER
-# ─────────────────────────────────────────────────────────────────────────────
-st.markdown("---")
+    # ─────────────────────────────────────────────────────────────────────────────
+    # FOOTER
+    # ─────────────────────────────────────────────────────────────────────────────
+    st.markdown("---")
 
-# Quick insights about filtered data
-if len(filtered) > 0:
-    avg_duration = filtered["duration_hours"].mean()
-    most_common_platform = filtered["platform"].mode()[0] if not filtered["platform"].mode().empty else "N/A"
-    most_common_level = filtered["level"].mode()[0] if not filtered["level"].mode().empty else "N/A"
-    
-    insight_col1, insight_col2, insight_col3 = st.columns(3)
-    with insight_col1:
-        st.markdown(f"""
-        <div class="info-box">
-            <strong>📊 Average Duration</strong><br>
-            {f'{avg_duration:.1f} hours' if pd.notna(avg_duration) else 'N/A'}
-        </div>
-        """, unsafe_allow_html=True)
-    with insight_col2:
-        st.markdown(f"""
-        <div class="info-box">
-            <strong>🏆 Most Common Platform</strong><br>
-            {most_common_platform}
-        </div>
-        """, unsafe_allow_html=True)
-    with insight_col3:
-        st.markdown(f"""
-        <div class="info-box">
-            <strong>📈 Most Common Level</strong><br>
-            {most_common_level}
-        </div>
-        """, unsafe_allow_html=True)
+    # Quick insights about filtered data
+    if len(filtered) > 0:
+        avg_duration = filtered["duration_hours"].mean()
+        most_common_platform = filtered["platform"].mode()[0] if not filtered["platform"].mode().empty else "N/A"
+        most_common_level = filtered["level"].mode()[0] if not filtered["level"].mode().empty else "N/A"
+        
+        insight_col1, insight_col2, insight_col3 = st.columns(3)
+        with insight_col1:
+            st.markdown(f"""
+            <div class="info-box">
+                <strong>📊 Average Duration</strong><br>
+                {f'{avg_duration:.1f} hours' if pd.notna(avg_duration) else 'N/A'}
+            </div>
+            """, unsafe_allow_html=True)
+        with insight_col2:
+            st.markdown(f"""
+            <div class="info-box">
+                <strong>🏆 Most Common Platform</strong><br>
+                {most_common_platform}
+            </div>
+            """, unsafe_allow_html=True)
+        with insight_col3:
+            st.markdown(f"""
+            <div class="info-box">
+                <strong>📈 Most Common Level</strong><br>
+                {most_common_level}
+            </div>
+            """, unsafe_allow_html=True)
 
-st.markdown(
-    "<p style='text-align:center; color:#475569; font-size:.8rem; margin-top: 2rem;'>"
-    "Course Explorer MVP · Student Success Support · CMU · "
-    f"Catalogue: {len(df)} resources across {df['domain'].nunique()} domains"
-    "</p>",
-    unsafe_allow_html=True,
-)
+        st.markdown(
+            "<p style='text-align:center; color:#475569; font-size:.8rem; margin-top: 2rem;'>"
+            "Course Explorer MVP · Student Success Support · CMU · "
+            f"Catalogue: {len(df)} resources across {df['domain'].nunique()} domains"
+            "</p>",
+            unsafe_allow_html=True,
+        )

@@ -1,0 +1,4 @@
+tutor_id,tutor_name,expertise_tags,availability_summary,booking_link
+1,Martin Koome,"Programming Fundamentals, Software Development, Data Science",Available Mon-Fri 2-6pm EST,https://calendar.app.google/41nyw2ymf4xHGicf7
+2,Paul,"AI & ML, Math Foundations, Data Science",Available Tue/Thu 3-7pm EST,https://calendar.google.com/calendar/appointments/schedules/paul-example
+3,Berket,"Cybersecurity, Networking, Software Development",Available Mon/Wed/Fri 4-8pm EST,https://calendar.google.com/calendar/appointments/schedules/berket-example
