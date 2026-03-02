@@ -55,6 +55,13 @@ with st.sidebar:
     
     current_theme = "Dark Mode" if st.session_state.theme == 'dark' else "Light Mode"
     st.caption(f"Current: {current_theme}")
+    
+    # Cache refresh button
+    st.markdown("---")
+    if st.button("🔄 Refresh Data", help="Clear cache and reload course data", use_container_width=True):
+        st.cache_data.clear()
+        st.success("Cache cleared! Reloading...")
+        st.rerun()
 
     # Chatbot toggle button
     st.markdown("---")
@@ -123,7 +130,7 @@ def _parse_duration_hours(raw: str) -> float | None:
     return None
 
 
-@st.cache_data(show_spinner="Loading course catalogue…")
+@st.cache_data(show_spinner="Loading course catalogue…", ttl=3600)  # Cache for 1 hour
 def load_data(path: str = "Online_curation.csv") -> pd.DataFrame:
     raw = pd.read_csv(path, dtype=str)
 
@@ -482,8 +489,10 @@ if not st.session_state.show_tutor_section:
     # QUICK STATS
     # ─────────────────────────────────────────────────────────────────────────────
     from collections import Counter
-    all_tags_flat = [tag for tags in df["skill_tags"] for tag in tags]
-    top_skills = [s for s, _ in Counter(all_tags_flat).most_common(5)]
+    
+    # Get top Focus Areas from the filtered dataset
+    focus_area_counts = filtered["focus_area"].value_counts()
+    top_focus_areas = focus_area_counts.head(5).index.tolist()
 
     # Duration coverage
     dur_count = int(df["duration_hours"].notna().sum())
@@ -507,9 +516,9 @@ if not st.session_state.show_tutor_section:
     <div class="stat-label">Showing Now</div>
   </div>
   <div class="stat-card" style="min-width:260px; text-align:left;">
-    <div class="stat-label" style="margin-bottom:4px;">Top Skill Areas</div>
+    <div class="stat-label" style="margin-bottom:4px;">Top Focus Areas</div>
     <div style="display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px;">
-      {"".join(f'<span class="badge badge-skill" style="font-size:.65rem;">{str(s)[:35]}</span>' for s in top_skills if s)}
+      {"".join(f'<span class="badge badge-skill" style="font-size:.65rem;">{str(fa)}</span>' for fa in top_focus_areas if fa)}
     </div>
   </div>
 </div>
