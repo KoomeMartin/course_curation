@@ -48,6 +48,13 @@ with st.sidebar:
     
     current_theme = "Dark Mode" if st.session_state.theme == 'dark' else "Light Mode"
     st.caption(f"Current: {current_theme}")
+    
+    # Cache refresh button
+    st.markdown("---")
+    if st.button("🔄 Refresh Data", help="Clear cache and reload course data", use_container_width=True):
+        st.cache_data.clear()
+        st.success("Cache cleared! Reloading...")
+        st.rerun()
 
 # ─────────────────────────────────────────────────────────────────────────────
 # DATA LOADING & NORMALIZATION
@@ -109,7 +116,7 @@ def _parse_duration_hours(raw: str) -> float | None:
     return None
 
 
-@st.cache_data(show_spinner="Loading course catalogue…")
+@st.cache_data(show_spinner="Loading course catalogue…", ttl=3600)  # Cache for 1 hour
 def load_data(path: str = "Online_curation.csv") -> pd.DataFrame:
     raw = pd.read_csv(path, dtype=str)
 
