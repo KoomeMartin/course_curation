@@ -1,0 +1,345 @@
+Competency domain,Focus Areas,Resource title,URL,Platform / host,Resource type,Stated learning outcomes,Stated prerequisites,Length (mins),Indicated level,Intended audience,Format type (passive / interactive),Publication date,Last updated,Captions / transcripts,Mobile accessible,Skill area,Student journey stage,Comments,Faculty comments,Faculty initials
+Foundational technical knowledge and digital literacy,Software Development,Become a Software Developer,https://www.linkedin.com/learning/paths/become-a-software-developer,LinkedIn Learning,Online Course,"Learn foundations of programming for software development.
+
+Practice with popular technologies like HTML and CSS.
+
+Explore core languages like Python, JavaScript, and Java.","Start with Programming Foundations: Fundamentals
+",38 hours ,Beginner,N/A,passive,N/A,April 2025,Yes,Yes,"Demonstrate the ability to apply programming skills and software engineering knowledge, including data structures and algorithms, to practical problems.",Pre-arrival,Good course for an introduction to software engineering domain. Could be better taken before foundations of software engineering course. ,,
+,,Introduction to Model Context Protocol (MCP),https://www.linkedin.com/learning/model-context-protocol-mcp-for-beginners-by-microsoft/introduction-to-model-context-protocol-mcp,LinkedIn Learning,Online Course,"learn how to build AI agents with the Model Context Protocol (MCP)—a powerful framework for building secure, scalable, and real-world AI applications. 
+
+Find out how to design and deploy AI agents with MCP in Visual Studio Code, contribute to the developer community, and apply best practices from early adopters across a variety of industries.",N/A,51 minutes,Beginner,N/A,Interactive,9/12/2025,17/02/2025,Yes,No,"Demonstrate the ability to apply programming skills and software engineering knowledge, including data structures and algorithms, to practical problems.",Pre-arrival,,,
+,,Agile Software Development: Refactoring,https://www.linkedin.com/learning/agile-software-development-refactoring,LinkedIn Learning,Online Course,"By the end of this course, students will be able to configure a Test-Driven Development (TDD) environment and execute fundamental refactoring techniques—such as renaming variables, extracting methods, and inlining methods—to safely improve code quality.
+
+Students will be equipped to manage technical debt and stabilize legacy code by systematically simplifying existing codebases, removing duplication, and designing more reusable objects.
+
+Students will be able to integrate continuous refactoring practices into an Agile development cycle, enabling them to rapidly and efficiently add new features to a streamlined codebase.",N/A,1 h 31minutes ,Intermediate,N/A,Interactive,"February 1, 2019",N/A,Yes,Yes,"Demonstrate the ability to apply programming skills and software engineering knowledge, including data structures and algorithms, to practical problems.",Ongoing study,More of a certification course. Requires Payment to acess ,,
+,,Agile Software Development: Transforming Your Organization,https://www.linkedin.com/learning/agile-software-development-transforming-your-organization-22395018,LinkedIn Learning,Online Course,"By the end of this course, students will be able to identify common challenges in agile adoption and implement practical techniques to effectively engage both internal and external customers while assessing and prioritizing their requests.
+
+Students will learn to drive organizational change by developing an agile portfolio, leading top-down transformations, breaking down existing IT silos, and utilizing specific metrics to track the progress of the transformation.
+
+Students will be equipped to scale agile practices across the enterprise by leveraging technical DevOps resources and applying established scaling models such as Scrum@Scale, the Scaled Agile Framework (SAFe), and Large-Scale Scrum (LeSS).",N/A,1 h 18 minutes ,Beginner,N/A,Interactive,N/A,12/2/2025,Yes,Yes,"Demonstrate the ability to apply programming skills and software engineering knowledge, including data structures and algorithms, to practical problems.",Pre-arrival,,,
+,,Software Development Life Cycle (SDLC),https://www.linkedin.com/learning/software-development-life-cycle-sdlc-29588033,LinkedIn Learning,Online Course,"By the end of this course, students will be able to evaluate various software development life cycle (SDLC) approaches to select the optimal workflow for their organization.
+
+Students will learn to assess how the choice of a specific development methodology directly impacts project budgeting, staffing, and the overall management of software delivery.
+
+Students will be equipped to differentiate and apply modern, high-level development practices, including Lean, Kanban, and DevOps.",N/A,1h 55 minutes ,Beginner,N/A,Interactive,"May 27, 2025",N/A,Yes,Yes,"Demonstrate the ability to apply programming skills and software engineering knowledge, including data structures and algorithms, to practical problems.",Pre-arrival,,,
+,,Agile Software Development: Clean Coding Practices,https://www.linkedin.com/learning/agile-software-development-clean-coding-practices,LinkedIn Learning,Online Course,"By the end of this course, students will be able to write clean code that is easily understood by both human developers and computers.
+
+Students will learn to apply best practices for naming conventions, formatting, and logic to ensure clear and thoughtful code construction.
+
+Students will be equipped to design and implement clean unit tests that are both fast and efficient.",N/A,1h 4 minutes ,Intermediate,N/A,Interactive,"November 4, 2019",N/A,Yes,Yes,"Demonstrate the ability to apply programming skills and software engineering knowledge, including data structures and algorithms, to practical problems.",First semester,,,
+,Programming Fundamentals,Programming Foundations: Fundamentals,https://www.linkedin.com/learning/programming-foundations-fundamentals-3,LinkedIn Learning,Online Course,"By the end of this course, students will be able to apply fundamental programming concepts—such as variables, strings, and conditional statements—using Python to understand how code operates under the hood.
+
+Students will learn to manipulate various data types and systematically troubleshoot common programming errors.
+
+Students will be equipped to compare syntax across multiple programming languages and apply specific criteria to confidently choose the best language for their future coding journey.",N/A,3h 11 minutes ,Beginner,N/A,Interactive,N/A,December 2024,Yes,Yes,"Demonstrate the ability to apply programming skills and software engineering knowledge, including data structures and algorithms, to practical problems.",Pre-arrival,This course is part of a Professional Certificate from Microsoft.,,
+,,Programming Foundations: Beyond the Fundamentals,https://www.linkedin.com/learning/programming-foundations-beyond-the-fundamentals,LinkedIn Learning,Online Course,"By the end of this course, students will be able to manage paired data using Python dictionaries and implement for loops to iterate through collections.
+
+Students will learn to perform data type conversions and apply string concatenation to effectively format and output descriptive results to the terminal.
+
+Students will be equipped to systematically debug Python code by identifying and resolving syntax, runtime, and logic errors.","Be familiar with variables, functions, and conditional logic.
+Watch the Programming Foundations: Fundamentals course if you want to understand the syntax for basic Python commands.
+Be sure to install any version of Python that starts with a “3.” Python 3.8.0 is used in the course.
+Use any code editor. Visual Studio Code is used in the course.",3h 6 minutes ,Beginner,N/A,Interactive,N/A,November 2024,Yes,Yes,"Demonstrate the ability to apply programming skills and software engineering knowledge, including data structures and algorithms, to practical problems.",Pre-arrival,This course is part of a Professional Certificate from Microsoft.,,
+,,Programming Foundations: Data Structures,https://www.linkedin.com/learning/programming-foundations-data-structures-25191158,LinkedIn Learning,Online Course,"By the end of this course, students will be able to implement and utilize fundamental data structures, including arrays, lists, dictionaries, stacks, and queues.
+
+Students will learn to evaluate the time and space complexity of various data structures to analyze trade-offs and design scalable, efficient solutions.
+
+Students will be equipped to apply these structural concepts to solve practical programming challenges, such as executing searching, sorting, and data management tasks.",N/A,2h 46 minutes ,Beginner,Learners new to programming,Interactive,N/A,February 2025,Yes,Yes,"Demonstrate the ability to apply programming skills and software engineering knowledge, including data structures and algorithms, to practical problems.",Pre-arrival,,,
+,,Complete Guide to C++ Programming Foundations,https://www.linkedin.com/learning/complete-guide-to-c-plus-plus-programming-foundations,LinkedIn Learning,Online Course,"By the end of this course, students will be able to apply core C++ programming fundamentals and leverage advanced features like the Standard Template Library (STL) to build robust applications.
+
+Students will learn to write efficient, maintainable C++ code by solving practical, hands-on coding challenges.
+
+Students will be equipped with the essential software development skills needed to tackle complex programming tasks and advance their careers as C++ developers.",N/A,7h 1 min,Beginner,N/A,Interactive,N/A,October 2024,Yes,Yes,"Demonstrate the ability to apply programming skills and software engineering knowledge, including data structures and algorithms, to practical problems.",Pre-arrival,,,
+,,PHP with MySQL Essential Training: 1 The Basics,https://www.linkedin.com/learning/php-with-mysql-essential-training-1-the-basics,LinkedIn Learning,Online Course,"By the end of this course, students will be able to utilize PHP to develop interconnected, data-driven webpages capable of seamlessly passing dynamic content.
+
+Students will learn to construct and process HTML forms, validate user data, and effectively manage and display errors using PHP.
+
+Students will be equipped with MySQL fundamentals to establish secure database interactions for efficiently storing and retrieving data.",N/A,5h 52minutes ,Beginner,N/A,Interactive,N/A,November 2023,Yes,Yes,"Demonstrate the ability to apply programming skills and software engineering knowledge, including data structures and algorithms, to practical problems.",Pre-arrival,,,
+,Math Foundations,Foundational Math for Machine Learning,https://www.linkedin.com/learning/paths/foundational-math-for-machine-learning?u=42257553,LinkedIn Learning,Online Course,"
+    - Master linear algebra fundamentals.
+    - Grasp calculus concepts for machine learning.
+    - Harness the power of probability in machine learning.
+    - Unlock insights with statistical analysis.",N/A,5h 48m 16s,Intermediate,N/A,passive,N/A,June 2025,Yes,Yes,"Demonstrate proficiency in mathematics, including calculus, linear algebra, probability and statistics, and discrete mathematics.",Pre-arrival,,,
+,,Foundational Math for Generative AI: Understanding LLMs and Transformers through Practical Applications,https://www.linkedin.com/learning/foundational-math-for-generative-ai-understanding-llms-and-transformers-through-practical-applications/intro-to-foundational-math-for-generative-ai?u=42257553,LinkedIn Learning,Online Course,"
+    - Gain an intuitive understanding of how and why LLMs and transformers work.
+    - Learn how attention mechanisms evolved to solve key problems in RNN-based models.
+    - Develop a sentiment analysis model using TensorFlow, Keras, and Hugging Face’s DistilBERT.
+    - Enhance models progressively with mathematical insights applied in code, from word embeddings to attention and transformer layers.
+    - Use visualizations to grasp how attention and optimization work.
+",N/A,3h 23m,Intermediate,N/A,Interactive,"Feb 3, 2025",N/A,Yes,Yes,"Demonstrate proficiency in mathematics, including calculus, linear algebra, probability and statistics, and discrete mathematics.",Ongoing study,,,
+,,Machine Learning Foundations: Calculus,https://www.linkedin.com/learning/machine-learning-foundations-calculus/what-you-should-know?autoSkip=true&resume=false&u=42257553,LinkedIn Learning,Online Course,N/A,"While this course presents basic information about coding, you should already be familiar with both computers in general and some programming specifically. Basic Python programming knowledge will definitely help, though it's not strictly necessary. This course is focused on linear algebra capabilities and its applications in Python code. The focus will be on the latest versions of Python 3. Please make sure you have it installed on your machine. 
+
+You will also want to make sure that you have Anaconda installed. We're going to be working with Jupyter Notebooks.",1h 31m,Beginner,If you struggle with calculus concepts and techniques used to design and implement ML algorithms,passive,N/A,May 2025,Yes,Yes,"Demonstrate proficiency in mathematics, including calculus, linear algebra, probability and statistics, and discrete mathematics.",Pre-arrival,,,
+,,Probability Foundations for Data Science,https://www.linkedin.com/learning/probability-foundations-for-data-science/introduction-to-probability?u=42257553,LinkedIn Learning,Online Course,N/A,"First, it is important to have a basic knowledge of arithmetic and algebra in order to perform the calculations in this course. Next, it will be helpful if you have a basic understanding of some calculus concepts such as derivatives and integrals. Lastly, it will be helpful if you have a good understanding of basic probability concepts since this course will focus more on advanced topics. A basic probability refresher will be provided in chapter one, but if you need a more thorough refresher of these topics, then please check out Eddie Davila's LinkedIn Learning course, Statistics Foundations 2: Probability.",4h 56m,Intermediate,N/A,passive,"Aug 26, 2024",N/A,Yes,Yes,"Demonstrate proficiency in mathematics, including calculus, linear algebra, probability and statistics, and discrete mathematics.",Pre-arrival,,,
+,,Complete Guide to Calculus Foundations for Data Science,https://www.linkedin.com/learning/complete-guide-to-calculus-foundations-for-data-science/introduction-to-calculus?u=42257553,LinkedIn Learning,Online Course,"
+    Evaluate limits of various functions, including polynomial, rational, trigonometric, logarithmic, and exponential functions, using multiple techniques such as direct substitution, factoring, and the squeeze theorem.
+    Demonstrate proficiency in finding the derivatives of common functions and applying differentiation rules—including the product, quotient, chain, and power rules—to efficiently calculate derivatives.
+    Analyze the behavior of functions using derivatives, including finding extreme values, applying the Mean Value Theorem, solving optimization and related rates problems, and using techniques such as linear approximations, L'Hôpital's Rule, and Newton's Method.
+    Master integration techniques, such as substitution, integration by parts, and partial fraction decomposition, to evaluate both indefinite and definite integrals of various function types.
+    Apply integral calculus to solve real-world problems, including calculating areas between curves, volumes of solids, arc lengths, and solving problems related to work, energy, and probability.","First, it is important to have a basic knowledge of arithmetic and algebra to know how to work with equations, functions, and inequalities. Second, it is helpful to have a basic knowledge of geometry, such as basic shapes and properties, along with trigonometry and its various functions. This knowledge of mathematics will help you perform the calculations throughout this course. If you have taken a pre-calculus or calculus course in the past, this course will bring you up to speed.",10h,Intermediate,This course is an ideal fit for data scientists and data professionals seeking to advance their knowledge of the tools used in their profession and develop a deeper understanding of the mathematical science that drives the world of data.,passive,"Apr 21, 2025",N/A,Yes,Yes,"Demonstrate proficiency in mathematics, including calculus, linear algebra, probability and statistics, and discrete mathematics.",Pre-arrival,,,
+,Data Science- Bereket,Data Science Foundations: Fundamentals,https://www.linkedin.com/learning/data-science-foundations-fundamentals-24591071,linkedin,Online Couse,"Explain what data science is and how it relates to AI, machine learning, and business intelligence; Identify key data science roles, skills, tools, and techniques; Describe how data science has evolved with the rise of generative AI; Build a foundational understanding for further study in data science
+",N/A,5hr 24 min,Beginner,"Students intrested in
+ Datascience
+,Machine learning",passive,3/4/ 2025,N/A,Yes,Yes,Other (Specify in the 'Comments' column),First semester,"Students will get  skills in Data Science,Data analytics and   AI Fundamentals",,
+,,Python for Data Science and Machine Learning,https://www.linkedin.com/learning/python-for-data-science-and-machine-learning-essential-training-part-1,linkedin,Online Course,"Develop practical Python skills for data science and machine learning; Build a real-world data project using web scraping; Clean, transform, and analyze raw data; Create data visualizations and web-based graphs using Streamlit; Apply Python workflows to custom data science projects",N/A,"
+7h 44m",Intermediate,"Students intrested in
+ Datascience
+,Machine learning",Interactive,12/3/20205,N/A,Yes,Yes,Other (Specify in the 'Comments' column),Pre-arrival,"Students will gain skills such as Python (Programming Language),
+Machine Learning,
+Artificial Intelligence (AI),
+Data Science",,
+,,Learning Data Visualization,https://www.linkedin.com/learning/learning-data-visualization-15572314,linkedin,Online Course,"Explain core principles of effective data visualization; Analyze audience, goals, and data to choose appropriate visuals; Apply chart selection strategies based on human visual perception; Create clear, impactful visual stories from data",N/A,1h 51m,Intermediate,"Students interested in 
+Data analysis, 
+data-driven insights 
+and  data science",Interactive,21/10/2022,N/A,Yes,Yes,Other (Specify in the 'Comments' column),First semester,"Students will gain skills such as 	Data Visualization, Visual Analytics, Data Storytelling etc.",,
+,,Learning Data Analytics: 1 Foundations,https://www.linkedin.com/learning/learning-data-analytics-1-foundations,linkedin,Online Course,"Explain foundational data analytics concepts and analyst thinking; Use common analytics tools such as Excel, Microsoft Access, SQL, and Power BI; Import, clean, and prepare data from various sources including CSV files; Interpret data, ask the right business questions, and apply basic data governance principles; Create and share datasets for analytical use",N/A,3h 29m,Beginner,"Students intrested
+ in Data analytics",Interactive,N/A,19/12/ 2023,Yes,Yes,Other (Specify in the 'Comments' column),First semester,"Students will gain skills such as Data Analytics Fundamentals, SQL Basics, Data Cleaning etc.",,
+,,Learning Data Analytics Part 2: Extending and Applying Core Knowledge,https://www.linkedin.com/learning/learning-data-analytics-part-2-extending-and-applying-core-knowledge,linkedin,Online Course,"Apply core data analytics skills to create high-quality
+ datasets; Use queries, joins, and appends to build analytical 
+datasets;Create aggregate data and basic dashboards using
+ pivots;  Transform data using Power Query; Deliver data
+ insights aligned with business decision-making needs","Learning Data Analytics: 1
+ Foundations or equivalent knowledge","
+3h 22m",Beginner,"Students intrested
+ in Data analytics",Interactive,N/A,19/12/2023,Yes,Yes,Other (Specify in the 'Comments' column),First semester,,,
+,,Complete Guide to SQL for Data Engineering: from Beginner to Advanced,https://www.linkedin.com/learning/complete-guide-to-sql-for-data-engineering-from-beginner-to-advanced,linkedin,Online Course,"Write and optimize SQL queries for data engineering 
+tasks; Apply advanced SQL features including functions, 
+views, stored procedures, and indexes; 
+Manage database performance, security, and debugging; 
+Use SQL in ETL workflows and complete
+ a real-world data engineering project",N/A,7h 11m,Intermediate,Students aspiring and  seeking end-to-end SQL mastery,Interactive,N/A, 24/10/ 2025,Yes,Yes,Other (Specify in the 'Comments' column),First semester,"Skills gained are SQL, Data Engineering, ETL, Database Optimization etc(4.7 rating)",,
+,,Fundamentals-of-data-transformation-for-data-engineering,https://www.linkedin.com/learning/fundamentals-of-data-transformation-for-data-engineering/welcome-to-data-transformation?u=42257553,linkedin,Online Course,"Understand core data transformation concepts and 
+best practices; Apply data transformations using pandas 
+and DuckDB SQL;  Compare transformation approaches
+ across data lakes, data warehouses, and lakehouse
+ environments; Make informed decisions about appropriate 
+data transformation strategies",N/A,"3h 30m
+",Intermediate,"Students who want to earn skills in Data engineering, analytics engineering  and working with modern data platforms",passive,N/A,2/12/2025,Yes,Yes,Other (Specify in the 'Comments' column),First semester,"Data Engineering, Data Transformation",,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,AI & ML,Agentic AI for Developers: Concepts and Application for Enterprises,https://www.linkedin.com/learning/agentic-ai-for-developers-concepts-and-application-for-enterprises,linkedin,Online Course,"This course helps learners clearly understand what agentic AI is, how it works, and how it is changing the way business tasks are done. Learners gain practical knowledge of the main components of agentic AI, how to build simple enterprise use cases, and how to follow best practices when developing these systems. The course, taught by Kumaran Ponnambalam, also emphasizes responsible AI, including safety, oversight, and ethical considerations when deploying agentic AI solutions.",N/A,1h 31m,Intermediate,"students 
+interested in AI 
+and AI Engineering",Interactive,16/9/2024,N/A,Yes,Yes,Other (Specify in the 'Comments' column),First semester,"Demonstrate proficiency
+ in agentic AI, including 
+understanding 
+agent-based concepts, 
+applying core system 
+components, 
+designing enterprise workflows, implementing best practices,
+ and addressing responsible AI considerations such as safety, governance, and human oversight.",,
+,,Introduction to Prompt Engineering for Generative AI,https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124/joining-the-nlp-revolution,linkedin,Online Course,"Describe prompt engineering and its importance; 
+Use generative AI tools for text and image generation;
+ Explain basic AI tool components; 
+Evaluate capabilities and limitations of language models; Demonstrate responsible AI practices",N/A,1hr,Beginner,Students experimenting with generative AI,Interactive,28/8/2024,N/A,Yes,Yes,Other (Specify in the 'Comments' column),Pre-arrival,"AI Prompting, Artificial Intelligence (AI), Prompt Engineering,Part of Microsoft Professional Certificate; high user rating (4.6/5)",,
+,,Build with AI: Create Custom Chatbots with n8n,https://www.linkedin.com/learning/build-with-ai-create-custom-chatbots-with-n8n,linkedin,Online Course,Build an AI-powered chatbot using n8n; Connect the bot to a vector database like Pinecone for advanced search; Design prompts to handle FAQs; Understand the workflow from prototyping to production-ready AI chatbots; Apply practical AI tools and techniques in real-world scenarios,N/A,1hr 30m,Intermediate,"Students interested in  product AI, AI chatbot",Interactive,31/7/ 2025,N/A,Yes,Yes,Other (Specify in the 'Comments' column),First semester,"Hands-on
+ scenario-driven
+ course; 
+high learner
+ engagement and rating (4.8/5)",,
+,,Natural Language Processing (NLP) Fundamentals by Pearson,https://www.linkedin.com/learning/natural-language-processing-nlp-fundamentals-by-pearson,linkedin,Online Course,"Understand NLP fundamentals including text representation, cleaning, topic detection, regular expressions, and sentiment analysis; Apply PyTorch for text classification and sequence-to-sequence models; Explain transformer architectures underlying LLMs like ChatGPT, Claude, and BERT; Leverage NLP tools and algorithms for practical applications",N/A,6h 10m,Intermediate,Students intrested in Natural Language Processing,passive,18/2/ 2026,N/A,Yes,Yes,Other (Specify in the 'Comments' column),First semester,This course Covers both foundational and advanced NLP concepts; hands-on with NLTK and PyTorch; suitable for building practical NLP skills(4.7/5),,
+,,Introduction to Transformer Models for NLP,https://www.linkedin.com/learning/introduction-to-transformer-models-for-nlp,linkedin,Online Course,"Explain the core concepts of transformer architectures; Understand attention, embedding, and tokenization mechanisms; Develop practical NLP pipelines using transformer models; Apply Python examples in Jupyter notebooks to implement transformer-based NLP models",N/A,11h 18m,Intermediate,Students looking to deepen their understanding of transformer models,passive, 22/10/ 2024,N/A,Yes,Yes,Other (Specify in the 'Comments' column),First semester,"Covers Transformer Models, Large Language Models, Attention Mechanisms, Embeddings, Tokenization, NLP Pipelines",,
+,,pytorch-essential-training-deep-learning,https://www.linkedin.com/learning/pytorch-essential-training-deep-learning-23753149/deep-learning-with-pytorch?u=42257553,linkedin,Online Course,"Explain core PyTorch concepts and APIs; Load and preprocess data using PyTorch utilities; Build and train deep learning models; Apply PyTorch for experimentation, prototyping, and research workflows",N/A,"1h 21m
+",Intermediate,"Students interested in deep learning,AI",passive,15/4/2024,N/A,Yes,Yes,Other (Specify in the 'Comments' column),First semester,"Covers PyTorch, Deep Learning, Neural Networks",,
+,,,,,,,,,,,,,,,,,,,,
+,Networking,Cisco Certified Network Associate (CCNA) v1.1 (200-301) Cert Prep,https://www.linkedin.com/learning/cisco-certified-network-associate-ccna-v1-1-200-301-cert-prep/diving-into-the-course?u=42257553,LinkedIn Learning,Online Course,"By the end of this course, the learner will be able to:
+Understand network fundamentals, network access, IP connectivity, IP services, security fundamentals, and automation and programmability. 
+Learn about the critical components and architectures of modern networks, including routers, switches, security appliances, and more. 
+Explore how TCP and UDP protocols affect data transmission. D
+iscover how to manage IPv4 and IPv6 addresses, delve into subnetting, and explore Ethernet switching fundamentals. 
+Acquire hands-on experience with routing fundamentals and gain insights into first hop redundancy protocols (FHRPs).
+ Boost their knowledge of wireless networks, network services, and network security. 
+",N/A,18h,Intermediate,N/A,Interactive,10/24/0202,N/A,Yes,Yes,"Demonstrate foundational knowledge in computer architecture, operating systems, networking, and databases.",Ongoing study,Covers a wide range of topics to help you prepare for the CCNA exam.,,
+,,Networking Foundations: Networking Basics,https://www.linkedin.com/learning/networking-foundations-networking-basics/welcome-to-the-network-24998881?u=42257553,LinkedIn Learning,Online Course,"The objective of the course is to provide an overview of foundational networking topics that any networking professional should know. It covers the purpose of networks, how networking technologies benefit us in personal and business contexts, and introduces emerging technologies. The course also delves into network addresses, switches, routers, fiber-optic cabling, the OSI model, common network services, wireless networks, and more",N/A,1h 49m,Beginner,Networking professionals,passive,12/20/2024,N/A,Yes,Yes,"Demonstrate foundational knowledge in computer architecture, operating systems, networking, and databases.",Pre-arrival,"To help learners understand the wide spectrum of technologies falling under the umbrella of networking. This course provides an overview of the foundational topics any networking professional should know, as well as an introduction to emerging technologies.",,
+,,"Telecom Network Evolution 2G-to- 6G: Technologies, Architectures, and Key Concepts ",https://www.linkedin.com/learning/telecom-network-evolution-2g-to-6g-technologies-architecture-and-key-concepts/introduction-to-telecom-network-evolution?u=42257553,LinkedIn Learning,Online Course,"By the end of this course, the learner will be able to:
+Compare the evolution of telecom networks from 2G to 6G, including key architectural differences, capabilities, and standards defined by 3GPP and ITU.
+Explain the key components and functions of 4G (LTE) and 5G network architectures, including RAN, core network (AMF, SMF, and UPF), and transport network.
+Analyze spectrum allocation, frame structures, and physical layer technologies—including OFDMA, MIMO, and carrier aggregation—used in 4G and 5G networks.
+Interpret call flows and signaling procedures in 4G and 5G networks, including registration, mobility management, and end-to-end session establishment.
+Evaluate emerging technologies such as virtualization, cloud computing, and network slicing in the context of 5G and future 6G networks.",N/A,5h 18m,Beginner,N/A,passive,10/9/2025,N/A,Yes,Yes,"Demonstrate foundational knowledge in computer architecture, operating systems, networking, and databases.",Ongoing study,"As technology evolves, 6G is expected to seamlessly blend the physical, digital, and human worlds by 2030, making comprehension of this evolution essential for career readiness and technological fluency.",,
+,,Cloud Computing: Understanding Networking,https://www.linkedin.com/learning/cloud-computing-understanding-networking/welcome?u=42257553,LinkedIn Learning,Online Course,"Here are the key objectives you can expect to achieve:
+
+Understand the basics of cloud networking: Learn about public, private, hybrid, and multicloud architectures.
+Explore cloud-based network services: Gain knowledge on DNS, DHCP, VPN, and VPC.
+Learn about network security: Understand the challenges and how to implement security measures in the cloud.
+Interconnect cloud environments: Discover how to establish connectivity between different cloud environments.
+Monitor and troubleshoot networks: Get familiar with tools and techniques for network monitoring and troubleshooting. 
+",N/A,49m,Beginner,N/A,passive,3/1/2024,N/A,Yes,Yes,"Demonstrate foundational knowledge in computer architecture, operating systems, networking, and databases.",Ongoing study,Good introductory course for complex cloud concepts,,
+,,CompTIA Network+ (N10-009) ,https://www.linkedin.com/learning/comptia-network-plus-n10-009-cert-prep/network-plus-promo?u=42257553,LinkedIn Learning,Online Course,"The CompTIA Network+ (N10-009) Cert Prep course aims to equip you with foundational networking skills necessary to pass the CompTIA Network+ (N10-009) certification exam. The course covers a wide range of topics, including network models, cabling and topology, Ethernet basics and standards, TCP/IP basics, routing, network security, wireless networking, and more. By the end of the course, you should be well-prepared to tackle the certification exam and apply these networking skills in your professional role.",N/A,18h,Intermediate,Foundational IT/Networking careers,Interactive,4/25/2025,N/A,Yes,Yes,"Demonstrate foundational knowledge in computer architecture, operating systems, networking, and databases.",First semester,"A strong networking foundation (OSI, TCP/IP, routing, switching, wireless) and hand on experience",,
+,Cybersecurity,Vulnerability Assessment: Cybersecurity Labs Powered by Hack the Box,https://www.linkedin.com/learning/vulnerability-assessment-cybersecurity-labs-powered-by-hack-the-box/apply-your-skills-with-hack-the-box?u=42257553,LinkedIn Learning,Online Course,"Learn the essential skills and methodologies for conducting effective vulnerability assessments. 
+Using Cybersecurity Labs powered by Hack The Box, explore the differences between vulnerability assessments and penetration tests, gain hands-on experience with industry-standard tools like Nessus and OpenVAS.
+Learn how to interpret scan results, and discover best practices for delivering clear, actionable reports. 
+Differentiate between vulnerability assessments and penetration testing.
+Understand and apply vulnerability scoring systems (e.g., CVSS).
+Install, configure, and operate Nessus and OpenVAS vulnerability scanners.
+Interpret scan results and generate effective vulnerability assessment reports.","Information security fundamentals
+Penetration testing process fundamentals
+Linux fundamentals",4h 19m,Intermediate,"Security analysts, IT auditors, network engineers, and anyone responsible for identifying, assessing, and reporting on system vulnerabilities",Interactive,10/30/2025,N/A,Yes,Yes,Other (Specify in the 'Comments' column),Transition to industry,This course will provide you with essential skills and methodologies for conducting effective vulnerability assessments and penetration testing in cybersecurity,,
+,,Introduction to Cryptography and Applied Cryptanalysis,https://www.linkedin.com/learning/introduction-to-applied-cryptography-and-cryptanalysis-by-infosec/introduction-to-the-course?u=42257553,LinkedIn Learning,Online Course,"The key objectives of the course are to:
+Explore foundational topics such as symmetric and asymmetric cryptography, block and stream ciphers, and advanced encryption standards.
+Learn how to manage secure credentials effectively and understand the importance of hash functions.
+Explore SSL/TLS protocols and evaluate various VPN technologies.
+Gain hands-on skills necessary for solving real-world cybersecurity challenges, including deciphering malware communication and decoding encrypted files.
+By the end of this course, you'll be prepared to tackle encryption inefficiencies, secure data transmissions, and apply cryptographic solutions with confidence.
+",N/A,5h 41m,Beginner,Cybersecurity professionals,passive,9/5/2025,N/A,Yes,Yes,Other (Specify in the 'Comments' column),Ongoing study,"Offers good basics for Infrormation Security Beginners. Skill Areas: Cryptography, Cryptanalysis, & Malware Detection",,
+,,ISC2 Certified Information Systems Security Professional (CISSP) (2024) Cert Prep,https://www.linkedin.com/learning/isc2-certified-information-systems-security-professional-cissp-2024-cert-prep/earning-your-cissp?u=42257553,LinkedIn Learning,Online Course,"The ISC2 Certified Information Systems Security Professional (CISSP) (2024) Cert Prep course aims to prepare you for the CISSP certification exam. Key areas covered in the course:
+
+Security and Risk Management: Learn about security and risk management, including asset security.
+Security Architecture and Engineering: Explore security architecture and engineering principles.
+Communication and Network Security: Understand communication and network security, as well as identity and access management (IAM).
+Security Assessment and Testing: Go over security assessment, testing, and operations.
+Software Development Security: Gain insights into software development security.
+",N/A,21h,Intermediate,Cybersecurity professionals,Interactive,4/25/2024,N/A,Yes,Yes,Other (Specify in the 'Comments' column),Transition to industry,The CISSP is one of the most in-demand certifications for security professionals. This course gives your preparation for the exam off to a great start. Skills covered: Information and Network Security,,
+,,Certified Ethical Hacker,https://www.linkedin.com/learning/certified-ethical-hacker-ceh/certified-ethical-hacker-ceh-introduction?u=42257553,LinkedIn Learning,Online Course,"The course covers various topics, including ethical hacking fundamentals, reconnaissance techniques, network and perimeter hacking, system hacking phases and attack techniques, web application hacking, wireless, mobile, IoT and OT hacking, cloud computing, and cryptography. By the end of the course, you should be well-prepared to pass the CEH exam and take on the challenges of a cybersecurity professional.",N/A,19h,Intermediate,N/A,Interactive,2/3/2025,N/A,Yes,Yes,Other (Specify in the 'Comments' column),Ongoing study,"Skill Area: Ethical Hacking, Cybersecurity",,
+,,Cybersecurity Foundations,https://www.linkedin.com/learning/cybersecurity-foundations-22006082/understanding-the-cybersecurity-frameworks-and-standards?u=42257553,LinkedIn Learning,Online Course,"The course will enable learners to:
+Differentiate between the phases of the Cyber Kill Chain.
+Describe the several types of cyberattacks.
+Explain what the NIST Cybersecurity Framework is.
+Interpret basic practices of cyber risk.
+Determine which elements are used in developing a secure architecture.
+Articulate the best approach to respond to an incident.
+Describe the seven principles for global cybersecurity users.
+",N/A,3h 31m,Beginner,N/A,passive,4/8/0202,N/A,Yes,No,Other (Specify in the 'Comments' column),Pre-arrival,Skill Area: Cybersecurity,,
+,Hardware,Electronics Foundations: Fundamentals,https://www.linkedin.com/learning/electronics-foundations-fundamentals/the-fundamentals-of-electronics?u=42257553,LinkedIn,Online Course,"Key takeaways:
+
+Understand the fundamental concepts of voltage, current, resistance, and power.
+Learn to compare conductors and insulators and relate electric current to flowing water.
+Explore Ohm's law and how to measure DC voltage and direct current.
+Calculate the power consumption of your circuits and choose the right batteries to power them.
+Use a digital multimeter to measure actual voltage and current in circuits.",N/A,1h 17m,Beginner,N/A,Interactive,N/A,June 2021,Yes,Yes,Other (Specify in the 'Comments' column),Pre-arrival,,,
+,,Computer Architecture Essentials,https://www.linkedin.com/learning/computer-architecture-essentials/getting-started-with-computer-architecture?u=42257553,LinkedIn,Online Course,"Learning objectives
+Explain the fundamental components and architecture of computing systems, including the CPU, memory, and I/O subsystems.
+Analyze and evaluate various instruction execution techniques, such as pipelining and out-of-order execution, and their impact on CPU performance.
+Apply knowledge of memory hierarchies, caching strategies, and memory management techniques to optimize system performance.
+Evaluate different I/O handling methods, including polling, interrupts, and direct memory access, and their applications in system design.
+Analyze and discuss emerging technologies and specialized architectures, such as FPGAs, hardware accelerators, and neuromorphic computing, and their potential impact on the future of computing.",N/A,4h 47m,Advanced,N/A,Interactive,Jan 2025,N/A,Yes,Yes,"Demonstrate foundational knowledge in computer architecture, operating systems, networking, and databases.",First semester,,,
+,,Electronics Foundations: Basic Circuits,https://www.linkedin.com/learning/electronics-foundations-basic-circuits/principles-of-basic-electronic-circuits?u=42257553,LinkedIn,Online Course,"Understanding Basic Components: Learn how resistors, capacitors, and inductors work and how to use them in circuits.
+Building and Debugging Circuits: Gain skills in reading electrical schematics, building circuits on breadboards, and debugging existing circuits.
+Measuring Electrical Properties: Use tools like digital multimeters (DMM) and oscilloscopes to measure resistance, voltage, and electrical signals.
+Designing Filters: Learn to design passive low-pass and high-pass filters to remove unwanted frequency components from signals.
+AC vs. DC: Understand the differences between alternating current (AC) and direct current (DC) and their applications.",N/A,4h 2m,Beginner,N/A,Interactive,N/A,July 2021,Yes,Yes,"Demonstrate foundational knowledge in computer architecture, operating systems, networking, and databases.",Pre-arrival,,,
+,,Troubleshooting Common PC Issues for Users,https://www.linkedin.com/learning/troubleshooting-common-pc-issues-for-users-13981629/troubleshoot-pc-issues-yourself?u=42257553,LinkedIn,Online Course,"Diagnose and Resolve Issues: Learn how to determine if a PC problem is hardware or software-related and follow steps to resolve common issues like startup errors, shutdown problems, and malware.
+Maintenance Techniques: Discover methods to maintain and improve the performance of storage drives and other peripherals like printers and monitors.
+Network and Internet Connectivity: Gain tips on restoring network and internet connectivity when issues arise.",N/A,1h 49m,Beginner,N/A,Interactive,Jun 2021,N/A,Yes,Yes,"Demonstrate foundational knowledge in computer architecture, operating systems, networking, and databases.",Pre-arrival,,,
+,,Electronics Foundations: Semiconductor Devices,https://www.linkedin.com/learning/electronics-foundations-semiconductor-devices/understanding-semiconductor-devices?u=42257553,LinkedIn,Online Course,"Diodes: Learn how to use diodes to control the direction of current flow, protect circuits from large signals, reverse current, and flyback voltage.
+Transistors: Understand how transistors can control the amount of current in a circuit, act as switches, and amplify signals. Explore different types of transistors like BJTs and MOSFETs.
+Operational Amplifiers (Op-Amps): Discover how to use op-amps for various applications such as comparing, buffering, amplifying, filtering, and combining signals.",N/A,4h 8m,Intermediate,N/A,Interactive,N/A,Jun 2022,Yes,Yes,"Demonstrate foundational knowledge in computer architecture, operating systems, networking, and databases.",First semester,,,
+,,C Programming for Embedded Applications,https://www.linkedin.com/learning/c-programming-for-embedded-applications-14537235/getting-started-in-embedded-systems?u=42257553,LinkedIn,Online Course,"Volatile Memory Issues: Recognize issues related to limited capacity and impacts on the stack and heap.
+Nonvolatile Memory: Learn about storage options in embedded applications.
+Energy Consumption: Understand the critical nature of energy consumption and its impact on battery time and heating.
+Computational Power: Recognize the limited computational power of embedded processors and the benefits of keeping clock frequency low.
+Data Types: Learn about choosing the smallest data type to achieve your goal and the trade-offs between speed and storage.
+Floating-Point Arithmetic: Compare the expensive nature of implementing floating-point arithmetic with the convenience of fixed-point math.
+Function Alternatives: Review the benefits of using lookup tables, macro functions, and inlining.",N/A,2h 5m,Advanced,N/A,Interactive,Feb 2022,N/A,Yes,Yes,"Demonstrate foundational knowledge in computer architecture, operating systems, networking, and databases.",First semester,,,
+,Software,Software Architecture: Patterns for Developers,https://www.linkedin.com/learning/software-architecture-patterns-for-developers-25635719/intro-video-to-be-renamed?u=42257553,LinkedIn,Online Course,"Recognize and apply architectural patterns to your software designs.
+Design an architecture for a new software application.
+Understand various software architecture patterns, including system patterns like microservices, application patterns like event sourcing, and UI patterns like model-view-controller (MVC).
+Learn the pros and cons of different patterns to determine which ones to use.",You’ll need a familiarity of the basics of software development. Hands-on demonstrations are in C#; however you don’t need to know C# to be successful in this course. All the patterns we cover can be implemented in other programming languages as well.,1h 28m,Intermediate,Software Developers,Interactive,Apr 2025,N/A,Yes,Yes,"Demonstrate the ability to apply programming skills and software engineering knowledge, including data structures and algorithms, to practical problems.",First semester,,,
+,,Software Architecture Foundations,https://www.linkedin.com/learning/software-architecture-foundations/the-importance-of-software-architecture?u=42257553,LinkedIn,Online Course,"Understanding Software Architecture: Learn what software architecture is and how it helps in building better applications.
+Architect's Role: Gain insights into the day-to-day job of a traditional and modern software architect.
+Architectural Theories and Concepts: Explore major theories, concepts, and categories of architecture, including system vs. enterprise architecture.
+Design Processes: Understand requirements gathering, identifying bounded contexts, and architectural patterns.
+Architectural Patterns: Learn about common architectural patterns such as monoliths, microservices, microkernel architecture, and message-based architectures.",N/A,1h 36m,Beginner,N/A,Interactive,March 2019,N/A,Yes,Yes,"Demonstrate the ability to apply programming skills and software engineering knowledge, including data structures and algorithms, to practical problems.",Pre-arrival,,,
+,,,,LinkedIn,Online Course,,,,,,,,,,,,,,,
+,Electronics and Energy Fundamentals,Electronics Foundations: Fundamentals,https://www.linkedin.com/learning/electronics-foundations-fundamentals/the-fundamentals-of-electronics?u=42257553,LinkedIn Learning,Online Course,"
+    Comparing conductors and insulators
+    Relating electric current to flowing water
+    Exploring Ohm's law
+    Measuring DC voltage
+    Measuring direct current
+    Calculating the power consumption of your circuits
+    Choosing the right batteries to power your circuits"," If you can add, subtract, multiply, and divide, you're ready to start learning. ", 1h 17m,Beginner,Anyone,Interactive,N/A,"Jun 30, 2021",Yes,Yes,Other (Specify in the 'Comments' column),Pre-arrival,Foundational knowledge in Electronics,,
+,,Electronics Foundations: Semiconductor Devices,https://www.linkedin.com/learning/electronics-foundations-semiconductor-devices/understanding-semiconductor-devices?u=42257553,LinkedIn Learning,Online Course,"
+    Semiconductor materials
+    Diode applications
+    Rectifying a signal
+    Detecting the signal peak
+    Protecting against large signals, reverse current, and flyback voltage
+    Special purpose zener diodes, Schottky diodes, and photodiodes
+    NPN and PNP bipolar junction transistors
+    Using a BJT as a switch
+    Field effect transistors
+    Differences between BJTs and MOSFETs
+    Operational amplifiers
+    Op-amp applications
+    Comparing signals
+    Buffering signals
+    Amplifying signals
+    Filtering signals
+    Combining signals","You should already understand the fundamentals of electricity and how to build circuits using the three basic components of resistors, capacitors, and inductors. You should know how to build simple filter circuits, how to represent signals in the time and frequency domain, and how to interpret units of decibels and logarithmic scale.", 4h 8m,Intermediate,N/A,Interactive,N/A,"Jun 17, 2022",Yes,Yes,Other (Specify in the 'Comments' column),Ongoing study,Foundational knowledge in Electronics,,
+,,Electronics Foundations: Basic Circuits,https://www.linkedin.com/learning/electronics-foundations-basic-circuits/principles-of-basic-electronic-circuits?u=42257553,LinkedIn Learning,Online Course,"
+    Reading electrical schematics
+    Building circuits on breadboards
+    Reviewing types of static and variable resistors
+    Reading resistor color codes
+    Measuring resistance with a DMM
+    Measuring resistive sensors with an Arduino microcontroller
+    Making electrical signal measurements with an oscilloscope
+    Measuring AC voltage with a DMM
+    Understanding the time domain and frequency domain
+    Designing passive low-pass and high-pass filters
+    Reviewing reactive RC and RL circuits
+    The relationship between capacitors and inductors"," You should already understand the fundamental electrical concepts of voltage, current, resistance and power. If you're familiar with basic algebra and logarithms, you should be prepared for the math in this course. ", 4h 2m,Beginner,N/A,Interactive,N/A,"Jul 30, 2021",Yes,Yes,Other (Specify in the 'Comments' column),Pre-arrival,Foundational knowledge in Electronics,,
+,,Learning Arduino: Foundations,https://www.linkedin.com/learning/learning-arduino-foundations-2/getting-started-with-arduino-22858971?u=42257553,LinkedIn Learning,Online Course,"
+    What's an Arduino?
+    Creating an Arduino program
+    Using the setup() and loop() functions
+    Using the pinMode() and digitalWrite() commands
+    Creating your first sketch
+    Writing code to turn LEDs on and off
+    Wiring a pushbutton to Arduino
+    Activating an LED with a pushbutton
+    Troubleshooting","So the components that we need for the course are Arduino Uno, a 10k ohm resistor, a 330 ohm and we need three of them, three LEDs, push button, and jumper wires. The last thing that we need is a breadboard to make the connection of the circuit.",1h 6m,Beginner,N/A,Interactive,N/A,"Sep 25, 2023",Yes,Yes,Other (Specify in the 'Comments' column),Pre-arrival,Foundational knowledge in Electronics,,
+,,IoT Foundations: Fundamentals,https://www.linkedin.com/learning/iot-foundations-fundamentals/welcome-29683438?u=42257553,LinkedIn Learning,Online Course,"
+    IoT value modeling
+    The software-defined product
+    The hardware-defined product
+    Embedded systems
+    Connected sensors
+    The network fabric
+    OT IT and fog networks
+    Analytics and big data
+    Data services","This is a foundational course, so there's no real prerequisites other than having a common understanding of technology. It'd also be helpful to have a rudimentary understanding of programming, IT networking, and data analytics. The most important requirement is that you have an interest in the internet of things.",41m,Beginner,Those interested in internet of things,passive,N/A,"Aug 21, 2025",Yes,Yes,Other (Specify in the 'Comments' column),Pre-arrival,Foundational knowledge in Electronics,,
+,,,,,,,,,,,,,,,,,,,,
+,Simulation and Modelling,Additive Manufacturing: Testing and Simulating 3D Prints,https://www.linkedin.com/learning/additive-manufacturing-testing-and-simulating-3d-prints/simulating-testing-and-validating-3d-prints?u=42257553,LinkedIn Learning,Online Course,"Understanding 3D Printing Processes: Learn about the entire process from design to validation, including simulation, fabrication, and testing of 3D prints.
+Simulation and Testing: Explore how to simulate 3D printed parts, optimize designs, and test both plastic and metal 3D prints.
+Standards and Validation: Get insights into evolving standards for additive manufacturing and methods for validating low-cost filament prints and qualifying materials.",N/A,1h 38m,Intermediate,N/A,Interactive,November 2021,N/A,Yes,Yes,Other (Specify in the 'Comments' column),Pre-arrival,Understanding 3D Printing Processes,,
+,,PLC Simulation Software: Factory I/O with Connected Component Workbench,https://www.linkedin.com/learning/plc-simulation-software-factory-i-o-with-connected-component-workbench/plc-programming-using-a-3d-factory-simulation-software-22833119?u=42257553,LinkedIn Learning,Online Course,"PLC Programming: Learn to program PLCs using simulation software, which is essential for those without access to actual PLCs.
+Simulation Software: Gain hands-on experience with Connected Components Workbench (CCW) and Factory I/O software through progressively complex projects.
+Practical Projects: Work on real-world projects such as programming a control panel, a conveyor belt, a filling tank with a timer, and sorting boxes by height.
+Troubleshooting Tips: Learn useful troubleshooting tips for CCW software and Factory I/O to enhance your problem-solving skills.","Before starting this course, you should be familiar with ladder logic programming, including basic instructions like input and output instructions, and how timer instructions work. If you need a refresher or have no experience with ladder logic programming, it is recommended to check out the course 'Learning PLC Ladder Logic' available in the library.",2h 16m,Intermediate,N/A,Interactive,N/A,July 2025,Yes,Yes,Other (Specify in the 'Comments' column),First semester,Learn to program PLCs using simulation software,,
+,,CompTIA Tech+ (FC0-U71) Cert Prep,https://www.linkedin.com/learning/comptia-tech-plus-fc0-u71-cert-prep/articles/comptia-certification-exam-vouchers?u=42257553,LinkedIn Learning,Online Course,"Foundational IT Skills: Learn essential IT infrastructure and computing concepts, including hardware, software, and emerging technologies like AI and IoT.
+Troubleshooting and Security: Gain tips on troubleshooting common hardware and software issues and recognizing basic cybersecurity threats.
+Practical Applications: Understand how to set up and configure devices, manage files, and configure network and internet connectivity.",N/A,4h 50m,Intermediate,N/A,Interactive,Mar 2025,N/A,Yes,Yes,Other (Specify in the 'Comments' column),Ongoing study,"Learn essential IT infrastructure and computing concepts, including hardware, software, and emerging technologies like AI and IoT.",,
+,,,,,,,,,,,,,,,,,,,,
+Professional and Project Skills,Project management,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,Design thinking,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,Intellectual property & data protection,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,Business fundamentals & entrepreneurial thinking (business plan),,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,Business fundamentals & entrepreneurial thinking (business development),Business Development Foundations,,,,,,52m,Beginner,,,Jun 2023,N/A,Yes,Yes,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,Business fundamentals & entrepreneurial thinking (product development),,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,"Business fundamentals & entrepreneurial thinking 
+(market research)",,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,Business fundamentals & entrepreneurial thinking (finance),,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,SDGs,Sustainable Development Goals: Tech Solutions,https://www.linkedin.com/learning/sustainable-development-goals-sdg-tech-solutions/introduction?u=42257553,LinkedIn Learning,Online Course,"Learning objectives:
+Review the 17 Sustainable Development Goals (SDGs) and five associated themes.
+Learn about the people theme and SDGs 1–5: no poverty, zero hunger, good health and well-being, quality education, and gender equality.
+Explore a real-world case study on creating education solutions for refugee children in Jordan (SDGs 4, 10).
+Learn about the planet theme and SDGs 6, 12–14: responsible consumption and production, climate action, and life below water.
+Explore a real-world case study on protecting mangroves in Malaysia (SDGs 13, 15).
+Learn about the prosperity theme and SDGs 7–10: affordable and clean energy; decent work and economic growth; industry, innovation, and infrastructure; and reduced inequalities.
+Explore a real-world case study covering the smart tech partnership in Dubai (SDGs 9, 11, 17).
+Learn about the peace theme and SDG 16: peace, justice, and strong institutions.
+Explore a real-world case study covering birth registrations in Pakistan (SDG 10, 16, 17).
+Learn about the partnership theme and SDG 17: partnerships for the goals.
+Explore a real-world case study about a Kenyan mobile network operator delivering innovative solutions to customers (8, 9, 17).
+Discover how you can contribute to SDGs and create a more sustainable future.",N/A,52 min,Beginner,,passive,6/1/2023,N/A,Yes,Yes,Other (Specify in the 'Comments' column),Pre-arrival,"Clear and practical introduction to how technology can accelerate progress toward the SDGs. Skill areas covered: SDG, Technology Education",,
