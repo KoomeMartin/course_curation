@@ -580,7 +580,7 @@ def render_chatbot(df: pd.DataFrame, theme: str = "dark"):
             <h3 style="color:{text_c}; margin: 0 0 .5rem 0;">Start a conversation</h3>
             <p style="color:#94a3b8; font-size:.9rem; max-width:400px; margin:0 auto;">
                 I can help with general questions or find courses for you.<br><br>
-                <em>"Hello!"</em> · <em>"What is machine learning?"</em><br>
+                <em>"Hello!"</em> · <em>"What is ML?"</em><br>
                 <em>"Find me a long course in NLP"</em><br>
                 <em>"Beginner Python, under 60 minutes"</em>
             </p>
@@ -624,7 +624,7 @@ def render_chatbot(df: pd.DataFrame, theme: str = "dark"):
 
     # ── Chat Input ────────────────────────────────────────────────
     user_input = st.chat_input(
-        placeholder="e.g. Find long NLP courses, beginner Python under 60 mins...",
+        placeholder="e.g. Find   NLP courses or recommend me  Python under course...",
         key="chatbot_input"
     )
 
@@ -658,6 +658,7 @@ def render_chatbot(df: pd.DataFrame, theme: str = "dark"):
             with st.spinner("🔍 Searching courses..."):
                 try:
                     result = _search_courses(question, df, llm_history)
+                   
                 except Exception as e:
                     result = {"type": "text", "content": f"Sorry, I encountered an error: {str(e)}"}
 
