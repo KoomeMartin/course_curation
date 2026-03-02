@@ -3,11 +3,14 @@ Course Explorer — Student Success
 Streamlit MVP for curated course discovery and TA assignment.
 Run:  streamlit run app.py
 """
+import os
 
+from chatbot import render_chatbot
 import re
 import textwrap
 import pandas as pd
 import streamlit as st
+from dotenv import load_dotenv
 from datetime import datetime
 from theme_styles import get_theme_css
 
@@ -36,6 +39,10 @@ st.markdown(get_theme_css(st.session_state.theme), unsafe_allow_html=True)
 # ─────────────────────────────────────────────────────────────────────────────
 # THEME TOGGLE BUTTON IN SIDEBAR
 # ─────────────────────────────────────────────────────────────────────────────
+# Session state for chatbot page toggle
+if 'show_chatbot_page' not in st.session_state:
+    st.session_state.show_chatbot_page = False
+
 with st.sidebar:
     st.markdown("---")
     col1, col2 = st.columns([3, 1])
@@ -48,6 +55,13 @@ with st.sidebar:
     
     current_theme = "Dark Mode" if st.session_state.theme == 'dark' else "Light Mode"
     st.caption(f"Current: {current_theme}")
+
+    # Chatbot toggle button
+    st.markdown("---")
+    chatbot_label = "📚 Back to Courses" if st.session_state.show_chatbot_page else "💬 Course Assistant"
+    if st.button(chatbot_label, key="chatbot_sidebar_toggle", use_container_width=True):
+        st.session_state.show_chatbot_page = not st.session_state.show_chatbot_page
+        st.rerun()
 
 # ─────────────────────────────────────────────────────────────────────────────
 # DATA LOADING & NORMALIZATION
@@ -249,6 +263,13 @@ with st.sidebar:
     st.markdown("---")
     if st.button("🔄 Clear All Filters", use_container_width=True):
         st.rerun()
+
+# ─────────────────────────────────────────────────────────────────────────────
+# CONDITIONAL: CHATBOT PAGE vs COURSE EXPLORER
+# ─────────────────────────────────────────────────────────────────────────────
+if st.session_state.show_chatbot_page:
+    render_chatbot(df, theme=st.session_state.theme)
+    st.stop()
 
 # ─────────────────────────────────────────────────────────────────────────────
 # FILTERING LOGIC
@@ -719,3 +740,4 @@ if not st.session_state.show_tutor_section:
             "</p>",
             unsafe_allow_html=True,
         )
+# Chatbot is now rendered conditionally via sidebar toggle (see line ~262)
